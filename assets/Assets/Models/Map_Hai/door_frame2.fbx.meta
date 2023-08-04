@@ -1,0 +1,78 @@
+{
+  "ver": "2.3.4",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "5958dca9-79ca-4d75-a542-46049db55e15",
+  "files": [],
+  "subMetas": {
+    "33677": {
+      "importer": "gltf-scene",
+      "uuid": "5958dca9-79ca-4d75-a542-46049db55e15@33677",
+      "displayName": "",
+      "id": "33677",
+      "name": "door_frame2.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "9f100": {
+      "importer": "gltf-mesh",
+      "uuid": "5958dca9-79ca-4d75-a542-46049db55e15@9f100",
+      "displayName": "",
+      "id": "9f100",
+      "name": "door_frame2.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "8d883": {
+      "importer": "gltf-material",
+      "uuid": "5958dca9-79ca-4d75-a542-46049db55e15@8d883",
+      "displayName": "",
+      "id": "8d883",
+      "name": "lambert1.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "redirect": "5958dca9-79ca-4d75-a542-46049db55e15@33677",
+    "assetFinder": {
+      "meshes": [
+        "5958dca9-79ca-4d75-a542-46049db55e15@9f100"
+      ],
+      "skeletons": [],
+      "textures": [],
+      "materials": [
+        "5958dca9-79ca-4d75-a542-46049db55e15@8d883"
+      ],
+      "scenes": [
+        "5958dca9-79ca-4d75-a542-46049db55e15@33677"
+      ]
+    }
+  }
+}

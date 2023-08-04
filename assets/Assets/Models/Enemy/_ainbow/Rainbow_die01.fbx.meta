@@ -1,0 +1,184 @@
+{
+  "ver": "2.3.4",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "f390508c-437a-4f0a-9757-6564cd6b26ef",
+  "files": [
+    "__original-animation-0.cconb"
+  ],
+  "subMetas": {
+    "98912": {
+      "importer": "gltf-animation",
+      "uuid": "f390508c-437a-4f0a-9757-6564cd6b26ef@98912",
+      "displayName": "",
+      "id": "98912",
+      "name": "a.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 1.6666666269302368
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "e00e9": {
+      "importer": "gltf-mesh",
+      "uuid": "f390508c-437a-4f0a-9757-6564cd6b26ef@e00e9",
+      "displayName": "",
+      "id": "e00e9",
+      "name": "boss_rainbow.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "438fe": {
+      "importer": "gltf-skeleton",
+      "uuid": "f390508c-437a-4f0a-9757-6564cd6b26ef@438fe",
+      "displayName": "",
+      "id": "438fe",
+      "name": "UnnamedSkeleton.skeleton",
+      "userData": {
+        "gltfIndex": 0,
+        "jointsLength": 20
+      },
+      "ver": "1.0.1",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "adacb": {
+      "importer": "gltf-embeded-image",
+      "uuid": "f390508c-437a-4f0a-9757-6564cd6b26ef@adacb",
+      "displayName": "",
+      "id": "adacb",
+      "name": "file2.image",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".json",
+        ".png"
+      ],
+      "subMetas": {}
+    },
+    "e873a": {
+      "importer": "texture",
+      "uuid": "f390508c-437a-4f0a-9757-6564cd6b26ef@e873a",
+      "displayName": "",
+      "id": "e873a",
+      "name": "file2.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "f390508c-437a-4f0a-9757-6564cd6b26ef@adacb"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "b8e94": {
+      "importer": "gltf-material",
+      "uuid": "f390508c-437a-4f0a-9757-6564cd6b26ef@b8e94",
+      "displayName": "",
+      "id": "b8e94",
+      "name": "text_char.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "43ee6": {
+      "importer": "gltf-scene",
+      "uuid": "f390508c-437a-4f0a-9757-6564cd6b26ef@43ee6",
+      "displayName": "",
+      "id": "43ee6",
+      "name": "Rainbow_die01.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "file2",
+        "uri": "f390508c-437a-4f0a-9757-6564cd6b26ef@adacb"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "animationImportSettings": [
+      {
+        "name": "a",
+        "duration": 1.6666666269302368,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "a",
+            "from": 0,
+            "to": 1.6666666269302368,
+            "wrapMode": 2
+          }
+        ]
+      }
+    ],
+    "redirect": "f390508c-437a-4f0a-9757-6564cd6b26ef@43ee6",
+    "assetFinder": {
+      "meshes": [
+        "f390508c-437a-4f0a-9757-6564cd6b26ef@e00e9"
+      ],
+      "skeletons": [
+        "f390508c-437a-4f0a-9757-6564cd6b26ef@438fe"
+      ],
+      "textures": [
+        "f390508c-437a-4f0a-9757-6564cd6b26ef@e873a"
+      ],
+      "materials": [
+        "f390508c-437a-4f0a-9757-6564cd6b26ef@b8e94"
+      ],
+      "scenes": [
+        "f390508c-437a-4f0a-9757-6564cd6b26ef@43ee6"
+      ]
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "ver": "2.3.4",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "9d2ceb12-cdcc-4d26-b8c7-b012d55237de",
+  "files": [],
+  "subMetas": {
+    "b0b94": {
+      "importer": "gltf-mesh",
+      "uuid": "9d2ceb12-cdcc-4d26-b8c7-b012d55237de@b0b94",
+      "displayName": "",
+      "id": "b0b94",
+      "name": "deco2.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "8d883": {
+      "importer": "gltf-material",
+      "uuid": "9d2ceb12-cdcc-4d26-b8c7-b012d55237de@8d883",
+      "displayName": "",
+      "id": "8d883",
+      "name": "lambert1.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "f514d": {
+      "importer": "gltf-scene",
+      "uuid": "9d2ceb12-cdcc-4d26-b8c7-b012d55237de@f514d",
+      "displayName": "",
+      "id": "f514d",
+      "name": "deco2.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "redirect": "9d2ceb12-cdcc-4d26-b8c7-b012d55237de@f514d",
+    "assetFinder": {
+      "meshes": [
+        "9d2ceb12-cdcc-4d26-b8c7-b012d55237de@b0b94"
+      ],
+      "skeletons": [],
+      "textures": [],
+      "materials": [
+        "9d2ceb12-cdcc-4d26-b8c7-b012d55237de@8d883"
+      ],
+      "scenes": [
+        "9d2ceb12-cdcc-4d26-b8c7-b012d55237de@f514d"
+      ]
+    }
+  }
+}

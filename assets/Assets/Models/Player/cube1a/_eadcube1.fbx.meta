@@ -1,0 +1,108 @@
+{
+  "ver": "2.3.4",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "afad68b6-90f7-4796-bc6f-bfa1e9f1e44e",
+  "files": [],
+  "subMetas": {
+    "83504": {
+      "importer": "gltf-scene",
+      "uuid": "afad68b6-90f7-4796-bc6f-bfa1e9f1e44e@83504",
+      "displayName": "",
+      "id": "83504",
+      "name": "_eadcube1.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "075ef": {
+      "importer": "gltf-mesh",
+      "uuid": "afad68b6-90f7-4796-bc6f-bfa1e9f1e44e@075ef",
+      "displayName": "",
+      "id": "075ef",
+      "name": "head_cube1.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "8852e": {
+      "importer": "texture",
+      "uuid": "afad68b6-90f7-4796-bc6f-bfa1e9f1e44e@8852e",
+      "displayName": "",
+      "id": "8852e",
+      "name": "file14.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/Assets/Models/Player/cube1a/number text.png"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "1f51c": {
+      "importer": "gltf-material",
+      "uuid": "afad68b6-90f7-4796-bc6f-bfa1e9f1e44e@1f51c",
+      "displayName": "",
+      "id": "1f51c",
+      "name": "text_char7.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "file14",
+        "uri": "db://assets/Assets/Models/Player/cube1a/number text.png"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "redirect": "afad68b6-90f7-4796-bc6f-bfa1e9f1e44e@83504",
+    "assetFinder": {
+      "meshes": [
+        "afad68b6-90f7-4796-bc6f-bfa1e9f1e44e@075ef"
+      ],
+      "skeletons": [],
+      "textures": [
+        "afad68b6-90f7-4796-bc6f-bfa1e9f1e44e@8852e"
+      ],
+      "materials": [
+        "afad68b6-90f7-4796-bc6f-bfa1e9f1e44e@1f51c"
+      ],
+      "scenes": [
+        "afad68b6-90f7-4796-bc6f-bfa1e9f1e44e@83504"
+      ]
+    }
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "ver": "2.3.4",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "e2c681d0-56e9-42b6-8939-616de9cce6ea",
+  "files": [
+    "__original-animation-0.cconb"
+  ],
+  "subMetas": {
+    "77671": {
+      "importer": "gltf-scene",
+      "uuid": "e2c681d0-56e9-42b6-8939-616de9cce6ea@77671",
+      "displayName": "",
+      "id": "77671",
+      "name": "Rainbow_Idle01.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "e00e9": {
+      "importer": "gltf-mesh",
+      "uuid": "e2c681d0-56e9-42b6-8939-616de9cce6ea@e00e9",
+      "displayName": "",
+      "id": "e00e9",
+      "name": "boss_rainbow.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "18d6f": {
+      "importer": "gltf-animation",
+      "uuid": "e2c681d0-56e9-42b6-8939-616de9cce6ea@18d6f",
+      "displayName": "",
+      "id": "18d6f",
+      "name": "mixamo.com.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 0.9583333134651184
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "438fe": {
+      "importer": "gltf-skeleton",
+      "uuid": "e2c681d0-56e9-42b6-8939-616de9cce6ea@438fe",
+      "displayName": "",
+      "id": "438fe",
+      "name": "UnnamedSkeleton.skeleton",
+      "userData": {
+        "gltfIndex": 0,
+        "jointsLength": 20
+      },
+      "ver": "1.0.1",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "adacb": {
+      "importer": "gltf-embeded-image",
+      "uuid": "e2c681d0-56e9-42b6-8939-616de9cce6ea@adacb",
+      "displayName": "",
+      "id": "adacb",
+      "name": "file2.image",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".json",
+        ".png"
+      ],
+      "subMetas": {}
+    },
+    "e873a": {
+      "importer": "texture",
+      "uuid": "e2c681d0-56e9-42b6-8939-616de9cce6ea@e873a",
+      "displayName": "",
+      "id": "e873a",
+      "name": "file2.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "e2c681d0-56e9-42b6-8939-616de9cce6ea@adacb"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "b8e94": {
+      "importer": "gltf-material",
+      "uuid": "e2c681d0-56e9-42b6-8939-616de9cce6ea@b8e94",
+      "displayName": "",
+      "id": "b8e94",
+      "name": "text_char.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "file2",
+        "uri": "e2c681d0-56e9-42b6-8939-616de9cce6ea@adacb"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "animationImportSettings": [
+      {
+        "name": "mixamo.com",
+        "duration": 0.9583333134651184,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "mixamo.com",
+            "from": 0,
+            "to": 0.9583333134651184,
+            "wrapMode": 2
+          }
+        ]
+      }
+    ],
+    "redirect": "e2c681d0-56e9-42b6-8939-616de9cce6ea@77671",
+    "assetFinder": {
+      "meshes": [
+        "e2c681d0-56e9-42b6-8939-616de9cce6ea@e00e9"
+      ],
+      "skeletons": [
+        "e2c681d0-56e9-42b6-8939-616de9cce6ea@438fe"
+      ],
+      "textures": [
+        "e2c681d0-56e9-42b6-8939-616de9cce6ea@e873a"
+      ],
+      "materials": [
+        "e2c681d0-56e9-42b6-8939-616de9cce6ea@b8e94"
+      ],
+      "scenes": [
+        "e2c681d0-56e9-42b6-8939-616de9cce6ea@77671"
+      ]
+    }
+  }
+}

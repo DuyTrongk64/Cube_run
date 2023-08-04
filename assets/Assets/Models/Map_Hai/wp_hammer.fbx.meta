@@ -1,0 +1,78 @@
+{
+  "ver": "2.3.4",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "843f2fd3-36a5-4fee-aa57-a937667e5718",
+  "files": [],
+  "subMetas": {
+    "c6e7f": {
+      "importer": "gltf-mesh",
+      "uuid": "843f2fd3-36a5-4fee-aa57-a937667e5718@c6e7f",
+      "displayName": "",
+      "id": "c6e7f",
+      "name": "wp_hammer.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "c2b49": {
+      "importer": "gltf-material",
+      "uuid": "843f2fd3-36a5-4fee-aa57-a937667e5718@c2b49",
+      "displayName": "",
+      "id": "c2b49",
+      "name": "interior.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "5ffac": {
+      "importer": "gltf-scene",
+      "uuid": "843f2fd3-36a5-4fee-aa57-a937667e5718@5ffac",
+      "displayName": "",
+      "id": "5ffac",
+      "name": "wp_hammer.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "redirect": "843f2fd3-36a5-4fee-aa57-a937667e5718@5ffac",
+    "assetFinder": {
+      "meshes": [
+        "843f2fd3-36a5-4fee-aa57-a937667e5718@c6e7f"
+      ],
+      "skeletons": [],
+      "textures": [],
+      "materials": [
+        "843f2fd3-36a5-4fee-aa57-a937667e5718@c2b49"
+      ],
+      "scenes": [
+        "843f2fd3-36a5-4fee-aa57-a937667e5718@5ffac"
+      ]
+    }
+  }
+}

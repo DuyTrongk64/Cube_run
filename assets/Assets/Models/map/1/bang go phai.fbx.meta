@@ -1,0 +1,143 @@
+{
+  "ver": "2.3.4",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "db6f68e9-1561-4241-8a89-9dcc87c85bf5",
+  "files": [],
+  "subMetas": {
+    "e3843": {
+      "importer": "gltf-mesh",
+      "uuid": "db6f68e9-1561-4241-8a89-9dcc87c85bf5@e3843",
+      "displayName": "",
+      "id": "e3843",
+      "name": "bang_go_phai.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "3d067": {
+      "importer": "gltf-mesh",
+      "uuid": "db6f68e9-1561-4241-8a89-9dcc87c85bf5@3d067",
+      "displayName": "",
+      "id": "3d067",
+      "name": "coc_go.mesh",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "f2aa0": {
+      "importer": "gltf-embeded-image",
+      "uuid": "db6f68e9-1561-4241-8a89-9dcc87c85bf5@f2aa0",
+      "displayName": "",
+      "id": "f2aa0",
+      "name": "file44.image",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".json",
+        ".png"
+      ],
+      "subMetas": {}
+    },
+    "23f9e": {
+      "importer": "texture",
+      "uuid": "db6f68e9-1561-4241-8a89-9dcc87c85bf5@23f9e",
+      "displayName": "",
+      "id": "23f9e",
+      "name": "file44.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "db6f68e9-1561-4241-8a89-9dcc87c85bf5@f2aa0"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "fbf23": {
+      "importer": "gltf-material",
+      "uuid": "db6f68e9-1561-4241-8a89-9dcc87c85bf5@fbf23",
+      "displayName": "",
+      "id": "fbf23",
+      "name": "farmhouse.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "faec8": {
+      "importer": "gltf-scene",
+      "uuid": "db6f68e9-1561-4241-8a89-9dcc87c85bf5@faec8",
+      "displayName": "",
+      "id": "faec8",
+      "name": "bang go phai.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "file44",
+        "uri": "db6f68e9-1561-4241-8a89-9dcc87c85bf5@f2aa0"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "redirect": "db6f68e9-1561-4241-8a89-9dcc87c85bf5@faec8",
+    "assetFinder": {
+      "meshes": [
+        "db6f68e9-1561-4241-8a89-9dcc87c85bf5@e3843",
+        "db6f68e9-1561-4241-8a89-9dcc87c85bf5@3d067"
+      ],
+      "skeletons": [],
+      "textures": [
+        "db6f68e9-1561-4241-8a89-9dcc87c85bf5@23f9e"
+      ],
+      "materials": [
+        "db6f68e9-1561-4241-8a89-9dcc87c85bf5@fbf23"
+      ],
+      "scenes": [
+        "db6f68e9-1561-4241-8a89-9dcc87c85bf5@faec8"
+      ]
+    }
+  }
+}

@@ -1,0 +1,282 @@
+{
+  "ver": "2.3.4",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "41e532cb-3c5c-4349-b2cc-28649b7be3ce",
+  "files": [
+    "__original-animation-0.cconb"
+  ],
+  "subMetas": {
+    "30732": {
+      "importer": "gltf-skeleton",
+      "uuid": "41e532cb-3c5c-4349-b2cc-28649b7be3ce@30732",
+      "displayName": "",
+      "id": "30732",
+      "name": "UnnamedSkeleton-0.skeleton",
+      "userData": {
+        "gltfIndex": 0,
+        "jointsLength": 15
+      },
+      "ver": "1.0.1",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "ef550": {
+      "importer": "gltf-mesh",
+      "uuid": "41e532cb-3c5c-4349-b2cc-28649b7be3ce@ef550",
+      "displayName": "",
+      "id": "ef550",
+      "name": "Cube18_rig01:cube18.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "6b666": {
+      "importer": "gltf-mesh",
+      "uuid": "41e532cb-3c5c-4349-b2cc-28649b7be3ce@6b666",
+      "displayName": "",
+      "id": "6b666",
+      "name": "Cube18_rig01:wp_cap6c_rig01:wp_cap6c.mesh",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "b4251": {
+      "importer": "gltf-animation",
+      "uuid": "41e532cb-3c5c-4349-b2cc-28649b7be3ce@b4251",
+      "displayName": "",
+      "id": "b4251",
+      "name": "die.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 0.9166666865348816
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "f1394": {
+      "importer": "gltf-skeleton",
+      "uuid": "41e532cb-3c5c-4349-b2cc-28649b7be3ce@f1394",
+      "displayName": "",
+      "id": "f1394",
+      "name": "UnnamedSkeleton-1.skeleton",
+      "userData": {
+        "gltfIndex": 1,
+        "jointsLength": 1
+      },
+      "ver": "1.0.1",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "98d04": {
+      "importer": "gltf-embeded-image",
+      "uuid": "41e532cb-3c5c-4349-b2cc-28649b7be3ce@98d04",
+      "displayName": "",
+      "id": "98d04",
+      "name": "Cube18_rig01:file6.image",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".json",
+        ".png"
+      ],
+      "subMetas": {}
+    },
+    "ef5c9": {
+      "importer": "gltf-embeded-image",
+      "uuid": "41e532cb-3c5c-4349-b2cc-28649b7be3ce@ef5c9",
+      "displayName": "",
+      "id": "ef5c9",
+      "name": "Cube18_rig01:wp_cap6c_rig01:file2.image",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".json",
+        ".png"
+      ],
+      "subMetas": {}
+    },
+    "dd6b7": {
+      "importer": "texture",
+      "uuid": "41e532cb-3c5c-4349-b2cc-28649b7be3ce@dd6b7",
+      "displayName": "",
+      "id": "dd6b7",
+      "name": "Cube18_rig01:file6.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "41e532cb-3c5c-4349-b2cc-28649b7be3ce@98d04"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "14abf": {
+      "importer": "texture",
+      "uuid": "41e532cb-3c5c-4349-b2cc-28649b7be3ce@14abf",
+      "displayName": "",
+      "id": "14abf",
+      "name": "Cube18_rig01:wp_cap6c_rig01:file2.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "41e532cb-3c5c-4349-b2cc-28649b7be3ce@ef5c9"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "a74ca": {
+      "importer": "gltf-material",
+      "uuid": "41e532cb-3c5c-4349-b2cc-28649b7be3ce@a74ca",
+      "displayName": "",
+      "id": "a74ca",
+      "name": "Cube18_rig01:text_char3.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "a37d5": {
+      "importer": "gltf-material",
+      "uuid": "41e532cb-3c5c-4349-b2cc-28649b7be3ce@a37d5",
+      "displayName": "",
+      "id": "a37d5",
+      "name": "Cube18_rig01:wp_cap6c_rig01:text_char14.material",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "066c3": {
+      "importer": "gltf-scene",
+      "uuid": "41e532cb-3c5c-4349-b2cc-28649b7be3ce@066c3",
+      "displayName": "",
+      "id": "066c3",
+      "name": "Cube18b_die.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "Cube18_rig01:file6",
+        "uri": "41e532cb-3c5c-4349-b2cc-28649b7be3ce@98d04"
+      },
+      {
+        "name": "Cube18_rig01:wp_cap6c_rig01:file2",
+        "uri": "41e532cb-3c5c-4349-b2cc-28649b7be3ce@ef5c9"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "animationImportSettings": [
+      {
+        "name": "die",
+        "duration": 0.9166666865348816,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "die",
+            "from": 0,
+            "to": 0.9166666865348816,
+            "wrapMode": 2
+          }
+        ]
+      }
+    ],
+    "redirect": "41e532cb-3c5c-4349-b2cc-28649b7be3ce@066c3",
+    "assetFinder": {
+      "meshes": [
+        "41e532cb-3c5c-4349-b2cc-28649b7be3ce@ef550",
+        "41e532cb-3c5c-4349-b2cc-28649b7be3ce@6b666"
+      ],
+      "skeletons": [
+        "41e532cb-3c5c-4349-b2cc-28649b7be3ce@30732",
+        "41e532cb-3c5c-4349-b2cc-28649b7be3ce@f1394"
+      ],
+      "textures": [
+        "41e532cb-3c5c-4349-b2cc-28649b7be3ce@dd6b7",
+        "41e532cb-3c5c-4349-b2cc-28649b7be3ce@14abf"
+      ],
+      "materials": [
+        "41e532cb-3c5c-4349-b2cc-28649b7be3ce@a74ca",
+        "41e532cb-3c5c-4349-b2cc-28649b7be3ce@a37d5"
+      ],
+      "scenes": [
+        "41e532cb-3c5c-4349-b2cc-28649b7be3ce@066c3"
+      ]
+    }
+  }
+}
