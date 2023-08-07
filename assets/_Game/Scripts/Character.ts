@@ -3,12 +3,31 @@ const { ccclass, property } = _decorator;
 
 @ccclass('Character')
 export class Character extends Component {
-    start() {
 
+    private hp: number;
+
+    //getter
+    get isDead(): boolean {
+        return this.hp <= 0;
     }
 
-    update(deltaTime: number) {
-        
+    //khởi tạo
+    public onInit(hp: number) {
+        this.hp = hp;
+    }
+
+    //nhận damage
+    public onHit(damage: number) {
+        if (!this.isDead) {
+            this.hp -= damage;
+            if (this.isDead) {
+                this.onDeath();
+            }
+        }
+    }
+
+    protected onDeath() {
+        // this.onDeathAction(this);
     }
 }
 
