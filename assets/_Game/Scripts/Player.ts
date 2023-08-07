@@ -1,58 +1,70 @@
-import { _decorator, Component, EventMouse, EventTouch, Node, Vec2 } from 'cc';
-import { Character } from './Character';
+import { _decorator, CameraComponent, Component, EventMouse, EventTouch, Input, input, misc, Node, tween, UITransform, v2, Vec2, Vec3, view } from 'cc';
+import { Utilities } from './Utilities';
 const { ccclass, property } = _decorator;
 
 @ccclass('Player')
-export class Player extends Character {
+export class Player extends Component {
+
+    private hp : number;
 
     protected speed: number;
 
-    private touchOffset: Vec2;
+    private targetpos: Vec3;
 
+    private detalPos:Vec2;
 
+    private canMove: boolean;
 
-    public onInit(hp: number): void {
-        super.onInit(hp);
-        this.speed = 500;
+    private lastMousePos: Vec2;
+
+    onLoad() {
+        //set up move object
+        input.on(Input.EventType.TOUCH_START, this.onTouchBegan, this);
+        input.on(Input.EventType.TOUCH_MOVE, this.onTouchMoved, this);
     }
 
     start() {
-        this.onInit(5);
-
-        //set up move object
-        this.node.on(Node.EventType.TOUCH_START, this.onTouchBegan, this);
-        this.node.on(Node.EventType.TOUCH_MOVE, this.onTouchMoved, this);
+        this.hp = 5;
+        this.speed = 5;
+        this.canMove = false;
 
     }
 
     onDestroy() {
-        this.node.off(Node.EventType.TOUCH_START, this.onTouchBegan, this);
-        this.node.off(Node.EventType.TOUCH_MOVE, this.onTouchMoved, this);
+        input.off(Input.EventType.TOUCH_START, this.onTouchBegan, this);
+        input.off(Input.EventType.TOUCH_MOVE, this.onTouchMoved, this);
+    }
+
+    onStart() {
+
     }
 
     //bat dau an xuong
-    private onTouchBegan(event: EventTouch)/*: boolean*/ {
-        this.onStart();
-        this.touchOffset = Utilities.vec3ToVec2(this.node.position).subtract(this.getMousePoint(event));
+    private onTouchBegan(event: EventTouch) {
+        this.canMove = true;
+        this.lastMousePos = event.getLocation(); 
+        this.targetpos = this.node.getPosition();
     }
 
     //di chuyen chuot
     private onTouchMoved(event: EventTouch) {
-        const newPos = this.getMousePoint(event).add(this.touchOffset);
-
-        newPos.x = misc.clampf(newPos.x, this.clampHorizon.x, this.clampHorizon.y);
-        newPos.y = misc.clampf(newPos.y, this.clampVertical.x, this.clampVertical.y);
-
-        this.node.position = Utilities.vec2ToVec3(newPos);
+        const move = event.getLocation();
+        
+        this.detalPos = move.subtract(this.lastMousePos)
+    
     }
 
-    //lay vi tri chuot bam xuong
-    private getMousePoint(event: Event.EventTouch): Vec2 {
-        return event.getLocation().sub(v2(this.screen.x * 0.5, this.screen.y * 0.5));
+    startRun(deltaTime: number){
+        if(this.canMove){
+            let curPos = this.node.getPosition();
+            curPos.z -= this.speed*deltaTime;
+            let newPos = new Vec3((this.targetpos.x+this.detalPos.x-curPos.x)*deltaTime,this.targetpos.y,curPos.z);
+            this.node.setPosition(newPos);
+        }
     }
 
     update(deltaTime: number) {
-
+        this.startRun(deltaTime);
     }
 }
 
