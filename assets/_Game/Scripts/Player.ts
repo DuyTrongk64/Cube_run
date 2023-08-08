@@ -1,4 +1,4 @@
-import { _decorator, CameraComponent, Component, EventMouse, EventTouch, Input, input, misc, Node, tween, UITransform, v2, Vec2, Vec3, view } from 'cc';
+import { _decorator, CameraComponent, Component,Event, EventMouse, EventTouch, Input, input, misc, Node, SystemEvent, systemEvent, tween, UITransform, v2, Vec2, Vec3, view } from 'cc';
 import { Utilities } from './Utilities';
 const { ccclass, property } = _decorator;
 
@@ -9,19 +9,19 @@ export class Player extends Component {
 
     protected speed: number;
 
+    private targetpos: Vec3;
+
     private detalPos:Vec2;
 
     private canMove: boolean;
 
     private lastMousePos: Vec2;
 
-    private lastPlayerPos: Vec2;
-
     onLoad() {
         //set up move object
-        input.on(Input.EventType.TOUCH_START, this.onTouchBegan, this);
-        input.on(Input.EventType.TOUCH_MOVE, this.onTouchMoved, this);
-        input.on(Input.EventType.TOUCH_END, this.onTouchEnd, this);
+        this.node.on(Node.EventType.TOUCH_START, this.onTouchBegan, this);
+        this.node.on(Node.EventType.TOUCH_MOVE, this.onTouchMoved, this);
+        //input.on(Input.EventType.TOUCH_END, this.onTouchEnd, this);
     }
 
     start() {
@@ -32,8 +32,8 @@ export class Player extends Component {
     }
 
     onDestroy() {
-        input.off(Input.EventType.TOUCH_START, this.onTouchBegan, this);
-        input.off(Input.EventType.TOUCH_MOVE, this.onTouchMoved, this);
+        this.node.off(Node.EventType.TOUCH_START, this.onTouchBegan, this);
+        this.node.off(Node.EventType.TOUCH_MOVE, this.onTouchMoved, this);
     }
 
     onStart() {
@@ -42,8 +42,10 @@ export class Player extends Component {
 
     //bat dau an xuong
     private onTouchBegan(event: EventTouch) {
-        this.canMove = true;
-        this.lastMousePos = event.getLocation(); 
+        this.canMove = false;
+        console.log(event.target);
+        //this.lastMousePos = event.getLocation(); 
+        this.targetpos = this.node.getPosition();
         
     }
 
@@ -51,21 +53,17 @@ export class Player extends Component {
     private onTouchMoved(event: EventTouch) {
         const move = event.getLocation();
         
-        this.detalPos = move.subtract(this.lastMousePos);
-        
-
-        console.log(this.detalPos);
-    }
-
-    private onTouchEnd(event: EventTouch){
-        lat
+        this.detalPos = move.subtract(this.lastMousePos)
+    
     }
 
     startRun(deltaTime: number){
         if(this.canMove){
             let curPos = this.node.getPosition();
             curPos.z -= this.speed*deltaTime;
-            this.node.setPosition(curPos);
+
+            let newPos = new Vec3((this.targetpos.x+this.detalPos.x-curPos.x)*deltaTime,this.targetpos.y,curPos.z);
+            this.node.setPosition(newPos);
         }
     }
 
@@ -73,4 +71,3 @@ export class Player extends Component {
         this.startRun(deltaTime);
     }
 }
-
