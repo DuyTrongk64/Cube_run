@@ -9,18 +9,19 @@ export class Player extends Component {
 
     protected speed: number;
 
-    private targetpos: Vec3;
-
     private detalPos:Vec2;
 
     private canMove: boolean;
 
     private lastMousePos: Vec2;
 
+    private lastPlayerPos: Vec2;
+
     onLoad() {
         //set up move object
         input.on(Input.EventType.TOUCH_START, this.onTouchBegan, this);
         input.on(Input.EventType.TOUCH_MOVE, this.onTouchMoved, this);
+        input.on(Input.EventType.TOUCH_END, this.onTouchEnd, this);
     }
 
     start() {
@@ -43,23 +44,28 @@ export class Player extends Component {
     private onTouchBegan(event: EventTouch) {
         this.canMove = true;
         this.lastMousePos = event.getLocation(); 
-        this.targetpos = this.node.getPosition();
+        
     }
 
     //di chuyen chuot
     private onTouchMoved(event: EventTouch) {
         const move = event.getLocation();
         
-        this.detalPos = move.subtract(this.lastMousePos)
-    
+        this.detalPos = move.subtract(this.lastMousePos);
+        
+
+        console.log(this.detalPos);
+    }
+
+    private onTouchEnd(event: EventTouch){
+        lat
     }
 
     startRun(deltaTime: number){
         if(this.canMove){
             let curPos = this.node.getPosition();
             curPos.z -= this.speed*deltaTime;
-            let newPos = new Vec3((this.targetpos.x+this.detalPos.x-curPos.x)*deltaTime,this.targetpos.y,curPos.z);
-            this.node.setPosition(newPos);
+            this.node.setPosition(curPos);
         }
     }
 
