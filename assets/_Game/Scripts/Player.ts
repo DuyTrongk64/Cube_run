@@ -1,39 +1,38 @@
-import { _decorator, CameraComponent, Component,Event, EventMouse, EventTouch, Input, input, misc, Node, SystemEvent, systemEvent, tween, UITransform, v2, Vec2, Vec3, view } from 'cc';
+import { _decorator, Camera, CameraComponent, Component, Event, EventMouse, EventTouch, misc, Node, SystemEvent, systemEvent, tween, UITransform, v2, Vec2, Vec3, view } from 'cc';
 import { Utilities } from './Utilities';
 const { ccclass, property } = _decorator;
 
 @ccclass('Player')
 export class Player extends Component {
 
-    private hp : number;
+    @property(Camera)
+    camera: Camera = null;
+
+    private hp: number;
 
     protected speed: number;
 
-    private targetpos: Vec3;
-
-    private detalPos:Vec2;
-
     private canMove: boolean;
 
-    private lastMousePos: Vec2;
-
+    private playerOff_set: Vec2;
     onLoad() {
         //set up move object
-        this.node.on(Node.EventType.TOUCH_START, this.onTouchBegan, this);
-        this.node.on(Node.EventType.TOUCH_MOVE, this.onTouchMoved, this);
-        //input.on(Input.EventType.TOUCH_END, this.onTouchEnd, this);
+        this.node.on(Node.EventType.TOUCH_START, this.onTouchBegan, this,true);
+        this.node.on(Node.EventType.TOUCH_MOVE, this.onTouchMoved, this,true);
+        this.node.on(Node.EventType.TOUCH_END, this.onTouchEnd, this,true);
+        this.camera.priority = 1;
     }
 
     start() {
         this.hp = 5;
         this.speed = 5;
         this.canMove = false;
-
     }
 
     onDestroy() {
-        this.node.off(Node.EventType.TOUCH_START, this.onTouchBegan, this);
-        this.node.off(Node.EventType.TOUCH_MOVE, this.onTouchMoved, this);
+        this.node.off(Node.EventType.TOUCH_START, this.onTouchBegan, this,true);
+        this.node.off(Node.EventType.TOUCH_MOVE, this.onTouchMoved, this,true);
+        
     }
 
     onStart() {
@@ -41,29 +40,33 @@ export class Player extends Component {
     }
 
     //bat dau an xuong
-    private onTouchBegan(event: EventTouch) {
-        this.canMove = false;
-        console.log(event.target);
-        //this.lastMousePos = event.getLocation(); 
-        this.targetpos = this.node.getPosition();
-        
+    private onTouchBegan(event) {
+        this.canMove = true;
+        //event.propagationStopped = true;
     }
 
     //di chuyen chuot
-    private onTouchMoved(event: EventTouch) {
-        const move = event.getLocation();
+    private onTouchMoved(event) {
         
-        this.detalPos = move.subtract(this.lastMousePos)
-    
+        let touches = event.getTouches();
+            
+        let touch1 = touches[0];
+        let delta1 = touch1.getDelta();
+        this.playerOff_set.x = delta1.x;
+        let playerPos = this.node.getPosition();
+        playerPos.x = playerPos.x + delta1;
+        this.node.setPosition(playerPos);
     }
 
-    startRun(deltaTime: number){
-        if(this.canMove){
-            let curPos = this.node.getPosition();
-            curPos.z -= this.speed*deltaTime;
+    private onTouchEnd(event) {
+        
+    }
 
-            let newPos = new Vec3((this.targetpos.x+this.detalPos.x-curPos.x)*deltaTime,this.targetpos.y,curPos.z);
-            this.node.setPosition(newPos);
+    startRun(deltaTime: number) {
+        if (this.canMove) {
+            let curPos = this.node.getPosition();
+            curPos.z -= this.speed * deltaTime;
+            this.node.setPosition(curPos);
         }
     }
 

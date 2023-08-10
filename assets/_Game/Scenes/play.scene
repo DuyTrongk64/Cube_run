@@ -214,11 +214,11 @@
     "__prefab": null,
     "_projection": 1,
     "_priority": 0,
-    "_fov": 48.529,
+    "_fov": 45,
     "_fovAxis": 0,
     "_orthoHeight": 10,
     "_near": 1,
-    "_far": 108.546,
+    "_far": 1000,
     "_color": {
       "__type__": "cc.Color",
       "r": 51,
@@ -228,7 +228,7 @@
     },
     "_depth": 1,
     "_stencil": 0,
-    "_clearFlags": 14,
+    "_clearFlags": 7,
     "_rect": {
       "__type__": "cc.Rect",
       "x": 0,
@@ -240,7 +240,7 @@
     "_shutter": 7,
     "_iso": 0,
     "_screenScale": 1,
-    "_visibility": 1822425087,
+    "_visibility": -325058561,
     "_targetTexture": null,
     "_cameraType": -1,
     "_trackingType": 0,
@@ -249,7 +249,7 @@
   {
     "__type__": "cc.Node",
     "_name": "Road",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 1
     },
@@ -335,7 +335,7 @@
   {
     "__type__": "cc.Node",
     "_name": "Plane",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 7
     },
@@ -431,7 +431,7 @@
   {
     "__type__": "cc.Node",
     "_name": "Plane",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 7
     },
@@ -527,7 +527,7 @@
   {
     "__type__": "cc.Node",
     "_name": "Plane-001",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 7
     },
@@ -623,7 +623,7 @@
   {
     "__type__": "cc.Node",
     "_name": "Plane-002",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 7
     },
@@ -719,7 +719,7 @@
   {
     "__type__": "cc.Node",
     "_name": "Plane-003",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 7
     },
@@ -815,7 +815,7 @@
   {
     "__type__": "cc.Node",
     "_name": "Plane-004",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 7
     },
@@ -911,7 +911,7 @@
   {
     "__type__": "cc.Node",
     "_name": "Plane-005",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 7
     },
@@ -1007,7 +1007,7 @@
   {
     "__type__": "cc.Node",
     "_name": "Plane-006",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 7
     },
@@ -1103,7 +1103,7 @@
   {
     "__type__": "cc.Node",
     "_name": "Plane-007",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 7
     },
@@ -1199,7 +1199,7 @@
   {
     "__type__": "cc.Node",
     "_name": "Plane-008",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 7
     },
@@ -1295,7 +1295,7 @@
   {
     "__type__": "cc.Node",
     "_name": "Plane-009",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 7
     },
@@ -1391,7 +1391,7 @@
   {
     "__type__": "cc.Node",
     "_name": "Plane-010",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 7
     },
@@ -1487,7 +1487,7 @@
   {
     "__type__": "cc.Node",
     "_name": "Plane-011",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 7
     },
@@ -1583,7 +1583,7 @@
   {
     "__type__": "cc.Node",
     "_name": "Cylinder",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 7
     },
@@ -1679,7 +1679,7 @@
   {
     "__type__": "cc.Node",
     "_name": "Cylinder-001",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 7
     },
