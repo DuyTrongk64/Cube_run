@@ -1,4 +1,4 @@
-import { _decorator, Camera, CameraComponent, Component, Event, EventMouse, EventTouch, misc, Node, SystemEvent, tween, UITransform, Vec2, Vec3 } from 'cc';
+import { _decorator, Camera, CameraComponent, Component, Event, EventMouse, EventTouch, input, Input, misc, Node, Quat, SystemEvent, tween, UITransform, Vec2, Vec3 } from 'cc';
 import { Utilities } from './Utilities';
 const { ccclass, property } = _decorator;
 
@@ -25,10 +25,10 @@ export class Player extends Component {
 
     onLoad() {
         //set up move object
-        this.node.on(Node.EventType.TOUCH_START, this.onTouchBegan, this);
-        this.node.on(Node.EventType.TOUCH_MOVE, this.onTouchMoved, this);
-        this.node.on(Node.EventType.TOUCH_END, this.onTouchEnd, this);
-        //this.camera.priority = 1;
+        input.on(Input.EventType.TOUCH_START, this.onTouchBegan, this);
+        input.on(Input.EventType.TOUCH_MOVE, this.onTouchMoved, this);
+        input.on(Input.EventType.TOUCH_END, this.onTouchEnd, this);
+        
     }
 
     start() {
@@ -39,9 +39,9 @@ export class Player extends Component {
     }
 
     onDestroy() {
-        this.node.off(Node.EventType.TOUCH_START, this.onTouchBegan, this);
-        this.node.off(Node.EventType.TOUCH_MOVE, this.onTouchMoved, this);
-
+        input.off(Input.EventType.TOUCH_START, this.onTouchBegan, this);
+        input.off(Input.EventType.TOUCH_MOVE, this.onTouchMoved, this);
+        input.off(Input.EventType.TOUCH_END, this.onTouchEnd, this);
     }
 
     onStart() {
@@ -53,10 +53,11 @@ export class Player extends Component {
         this.canMove = true;
         this.isTouch = true;
         this.node.getPosition(this._curPos);
+        this.node.setRotation(new Quat(0, 1, 0, 0));
     }
 
     //di chuyen chuot
-    private onTouchMoved(event: EventTouch) {
+    private onTouchMoved(event) {
 
         let touches = event.getTouches();
 
@@ -70,7 +71,7 @@ export class Player extends Component {
         // console.log(this._targetPos.x);
     }
 
-    private onTouchEnd(event: EventTouch) {
+    private onTouchEnd(event) {
         this.isTouch = false;
     }
 
@@ -80,12 +81,12 @@ export class Player extends Component {
             let curPos = this.node.getPosition();
             curPos.z -= this.speed * deltaTime;
             this.node.setPosition(curPos);
-
+            
         }
         if (this.isTouch) {
             this.node.getPosition(this._curPos);
-            this._targetPos.x = this._deltaPos.x * deltaTime*2;
-            console.log(this._deltaPos.x);
+            this._targetPos.x = this._deltaPos.x * deltaTime / 2;
+            //console.log(this._deltaPos.x);
             Vec3.add(this._curPos, this._curPos, this._targetPos);
             this.node.setPosition(this._curPos);
         }
