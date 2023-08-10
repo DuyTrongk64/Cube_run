@@ -1,5 +1,5 @@
 {
-  "ver": "2.3.4",
+  "ver": "2.3.8",
   "importer": "fbx",
   "imported": true,
   "uuid": "e352965d-c31a-4e17-9918-4697a78f9949",
@@ -12,9 +12,10 @@
       "id": "21263",
       "name": "polySurface16701_Material0.mesh",
       "userData": {
-        "gltfIndex": 5
+        "gltfIndex": 5,
+        "triangleCount": 310
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -29,7 +30,10 @@
       "id": "37491",
       "name": "file42.image",
       "userData": {
-        "gltfIndex": 1
+        "gltfIndex": 1,
+        "fixAlphaTransparencyArtifacts": true,
+        "hasAlpha": true,
+        "type": "texture"
       },
       "ver": "1.0.3",
       "imported": true,
@@ -46,9 +50,10 @@
       "id": "65800",
       "name": "polySurface16705.mesh",
       "userData": {
-        "gltfIndex": 28
+        "gltfIndex": 28,
+        "triangleCount": 140
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -63,9 +68,10 @@
       "id": "209b6",
       "name": "nen_troi1.mesh",
       "userData": {
-        "gltfIndex": 0
+        "gltfIndex": 0,
+        "triangleCount": 8
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -80,9 +86,10 @@
       "id": "a9eab",
       "name": "dat.mesh",
       "userData": {
-        "gltfIndex": 1
+        "gltfIndex": 1,
+        "triangleCount": 204
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -97,9 +104,10 @@
       "id": "2284c",
       "name": "lua_mach.mesh",
       "userData": {
-        "gltfIndex": 2
+        "gltfIndex": 2,
+        "triangleCount": 1944
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -114,9 +122,10 @@
       "id": "7e6c8",
       "name": "cay.mesh",
       "userData": {
-        "gltfIndex": 3
+        "gltfIndex": 3,
+        "triangleCount": 2932
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -131,9 +140,10 @@
       "id": "08d0e",
       "name": "rom.mesh",
       "userData": {
-        "gltfIndex": 4
+        "gltfIndex": 4,
+        "triangleCount": 2286
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -148,9 +158,10 @@
       "id": "2ea48",
       "name": "polySurface16690_Material0.mesh",
       "userData": {
-        "gltfIndex": 6
+        "gltfIndex": 6,
+        "triangleCount": 310
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -165,9 +176,10 @@
       "id": "fd8c9",
       "name": "polySurface16683_Material0.mesh",
       "userData": {
-        "gltfIndex": 7
+        "gltfIndex": 7,
+        "triangleCount": 310
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -182,9 +194,10 @@
       "id": "3d4f1",
       "name": "polySurface16695_Material0.mesh",
       "userData": {
-        "gltfIndex": 8
+        "gltfIndex": 8,
+        "triangleCount": 310
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -199,9 +212,10 @@
       "id": "ed1d6",
       "name": "polySurface16700_Material0.mesh",
       "userData": {
-        "gltfIndex": 9
+        "gltfIndex": 9,
+        "triangleCount": 1383
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -216,9 +230,10 @@
       "id": "58de2",
       "name": "polySurface16689_Material0.mesh",
       "userData": {
-        "gltfIndex": 10
+        "gltfIndex": 10,
+        "triangleCount": 1383
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -233,9 +248,10 @@
       "id": "f0207",
       "name": "polySurface16693_Material0.mesh",
       "userData": {
-        "gltfIndex": 11
+        "gltfIndex": 11,
+        "triangleCount": 1383
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -250,9 +266,10 @@
       "id": "e26cd",
       "name": "polySurface16698_Material0.mesh",
       "userData": {
-        "gltfIndex": 12
+        "gltfIndex": 12,
+        "triangleCount": 1383
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -267,9 +284,10 @@
       "id": "3f7a9",
       "name": "polySurface16121.mesh",
       "userData": {
-        "gltfIndex": 13
+        "gltfIndex": 13,
+        "triangleCount": 140
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -284,9 +302,10 @@
       "id": "2e3e5",
       "name": "polySurface16123.mesh",
       "userData": {
-        "gltfIndex": 14
+        "gltfIndex": 14,
+        "triangleCount": 140
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -301,9 +320,10 @@
       "id": "d2e67",
       "name": "polySurface16128.mesh",
       "userData": {
-        "gltfIndex": 15
+        "gltfIndex": 15,
+        "triangleCount": 140
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -318,9 +338,10 @@
       "id": "bbb7a",
       "name": "polySurface16129.mesh",
       "userData": {
-        "gltfIndex": 16
+        "gltfIndex": 16,
+        "triangleCount": 140
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -335,9 +356,10 @@
       "id": "3b1c1",
       "name": "polySurface16668.mesh",
       "userData": {
-        "gltfIndex": 17
+        "gltfIndex": 17,
+        "triangleCount": 140
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -352,9 +374,10 @@
       "id": "539cb",
       "name": "polySurface16669.mesh",
       "userData": {
-        "gltfIndex": 18
+        "gltfIndex": 18,
+        "triangleCount": 140
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -369,9 +392,10 @@
       "id": "231d7",
       "name": "polySurface16671.mesh",
       "userData": {
-        "gltfIndex": 19
+        "gltfIndex": 19,
+        "triangleCount": 140
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -386,9 +410,10 @@
       "id": "31bd5",
       "name": "polySurface16672.mesh",
       "userData": {
-        "gltfIndex": 20
+        "gltfIndex": 20,
+        "triangleCount": 140
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -403,9 +428,10 @@
       "id": "f0884",
       "name": "polySurface16105.mesh",
       "userData": {
-        "gltfIndex": 21
+        "gltfIndex": 21,
+        "triangleCount": 58
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -420,9 +446,10 @@
       "id": "1073f",
       "name": "polySurface16674.mesh",
       "userData": {
-        "gltfIndex": 22
+        "gltfIndex": 22,
+        "triangleCount": 140
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -437,9 +464,10 @@
       "id": "94cf7",
       "name": "polySurface16676.mesh",
       "userData": {
-        "gltfIndex": 23
+        "gltfIndex": 23,
+        "triangleCount": 140
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -454,9 +482,10 @@
       "id": "0fe50",
       "name": "polySurface16677.mesh",
       "userData": {
-        "gltfIndex": 24
+        "gltfIndex": 24,
+        "triangleCount": 140
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -471,9 +500,10 @@
       "id": "c5e31",
       "name": "polySurface16702.mesh",
       "userData": {
-        "gltfIndex": 25
+        "gltfIndex": 25,
+        "triangleCount": 140
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -488,9 +518,10 @@
       "id": "cf94e",
       "name": "polySurface16703.mesh",
       "userData": {
-        "gltfIndex": 26
+        "gltfIndex": 26,
+        "triangleCount": 140
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -505,9 +536,10 @@
       "id": "02fab",
       "name": "polySurface16704.mesh",
       "userData": {
-        "gltfIndex": 27
+        "gltfIndex": 27,
+        "triangleCount": 140
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -522,7 +554,10 @@
       "id": "5af6c",
       "name": "file41.image",
       "userData": {
-        "gltfIndex": 0
+        "gltfIndex": 0,
+        "fixAlphaTransparencyArtifacts": true,
+        "hasAlpha": true,
+        "type": "texture"
       },
       "ver": "1.0.3",
       "imported": true,
@@ -539,7 +574,10 @@
       "id": "f945a",
       "name": "file18.image",
       "userData": {
-        "gltfIndex": 2
+        "gltfIndex": 2,
+        "fixAlphaTransparencyArtifacts": true,
+        "hasAlpha": true,
+        "type": "texture"
       },
       "ver": "1.0.3",
       "imported": true,
@@ -707,7 +745,7 @@
       "userData": {
         "gltfIndex": 0
       },
-      "ver": "1.0.12",
+      "ver": "1.0.14",
       "imported": true,
       "files": [
         ".json"
@@ -731,7 +769,8 @@
       }
     ],
     "fbx": {
-      "smartMaterialEnabled": true
+      "smartMaterialEnabled": true,
+      "matchMeshNames": false
     },
     "redirect": "e352965d-c31a-4e17-9918-4697a78f9949@a19b4",
     "assetFinder": {
@@ -781,6 +820,24 @@
       ],
       "scenes": [
         "e352965d-c31a-4e17-9918-4697a78f9949@a19b4"
+      ]
+    },
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
       ]
     }
   }

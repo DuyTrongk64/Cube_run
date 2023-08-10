@@ -1,5 +1,5 @@
 {
-  "ver": "2.3.4",
+  "ver": "2.3.8",
   "importer": "fbx",
   "imported": true,
   "uuid": "6b0f5c03-0e37-4487-9db8-05e5478bff1d",
@@ -31,7 +31,10 @@
       "id": "84480",
       "name": "Cube8_rig01:file2.image",
       "userData": {
-        "gltfIndex": 0
+        "gltfIndex": 0,
+        "fixAlphaTransparencyArtifacts": true,
+        "hasAlpha": true,
+        "type": "texture"
       },
       "ver": "1.0.3",
       "imported": true,
@@ -57,7 +60,7 @@
         },
         "events": []
       },
-      "ver": "1.0.16",
+      "ver": "1.0.17",
       "imported": true,
       "files": [
         ".cconb"
@@ -71,9 +74,10 @@
       "id": "7c73f",
       "name": "Cube8_rig01:cube8.mesh",
       "userData": {
-        "gltfIndex": 0
+        "gltfIndex": 0,
+        "triangleCount": 3320
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -88,9 +92,10 @@
       "id": "af4bf",
       "name": "wp_cap2a_rig01:wp_cap2a.mesh",
       "userData": {
-        "gltfIndex": 1
+        "gltfIndex": 1,
+        "triangleCount": 180
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -105,9 +110,10 @@
       "id": "6f6e3",
       "name": "wp_cap4c_rig01:wp_cap4c.mesh",
       "userData": {
-        "gltfIndex": 2
+        "gltfIndex": 2,
+        "triangleCount": 1856
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -156,7 +162,10 @@
       "id": "2c872",
       "name": "wp_cap2a_rig01:file2.image",
       "userData": {
-        "gltfIndex": 1
+        "gltfIndex": 1,
+        "fixAlphaTransparencyArtifacts": true,
+        "hasAlpha": true,
+        "type": "texture"
       },
       "ver": "1.0.3",
       "imported": true,
@@ -173,7 +182,10 @@
       "id": "2d43b",
       "name": "wp_cap4c_rig01:file2.image",
       "userData": {
-        "gltfIndex": 2
+        "gltfIndex": 2,
+        "fixAlphaTransparencyArtifacts": true,
+        "hasAlpha": true,
+        "type": "texture"
       },
       "ver": "1.0.3",
       "imported": true,
@@ -309,7 +321,7 @@
       "userData": {
         "gltfIndex": 0
       },
-      "ver": "1.0.12",
+      "ver": "1.0.14",
       "imported": true,
       "files": [
         ".json"
@@ -333,7 +345,8 @@
       }
     ],
     "fbx": {
-      "smartMaterialEnabled": true
+      "smartMaterialEnabled": true,
+      "matchMeshNames": false
     },
     "animationImportSettings": [
       {
@@ -345,7 +358,8 @@
             "name": "a",
             "from": 0,
             "to": 0.6666666865348816,
-            "wrapMode": 2
+            "wrapMode": 2,
+            "previousId": "98912"
           }
         ]
       }
@@ -374,6 +388,24 @@
       ],
       "scenes": [
         "6b0f5c03-0e37-4487-9db8-05e5478bff1d@9f0b7"
+      ]
+    },
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
       ]
     }
   }

@@ -1,5 +1,5 @@
 {
-  "ver": "2.3.4",
+  "ver": "2.3.8",
   "importer": "fbx",
   "imported": true,
   "uuid": "dbb20a9b-057c-44b5-b87e-3b829ed4cef5",
@@ -56,7 +56,7 @@
         },
         "events": []
       },
-      "ver": "1.0.16",
+      "ver": "1.0.17",
       "imported": true,
       "files": [
         ".cconb"
@@ -70,9 +70,10 @@
       "id": "8995d",
       "name": "wp_cap1_rig01:wp_cap1.mesh",
       "userData": {
-        "gltfIndex": 0
+        "gltfIndex": 0,
+        "triangleCount": 58
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -87,9 +88,10 @@
       "id": "f414f",
       "name": "Cube14_rig01:Cube14.mesh",
       "userData": {
-        "gltfIndex": 1
+        "gltfIndex": 1,
+        "triangleCount": 3636
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -121,7 +123,10 @@
       "id": "13c5f",
       "name": "wp_cap1_rig01:file2.image",
       "userData": {
-        "gltfIndex": 0
+        "gltfIndex": 0,
+        "fixAlphaTransparencyArtifacts": true,
+        "hasAlpha": true,
+        "type": "texture"
       },
       "ver": "1.0.3",
       "imported": true,
@@ -138,7 +143,10 @@
       "id": "07ac3",
       "name": "Cube14_rig01:file8.image",
       "userData": {
-        "gltfIndex": 1
+        "gltfIndex": 1,
+        "fixAlphaTransparencyArtifacts": true,
+        "hasAlpha": true,
+        "type": "texture"
       },
       "ver": "1.0.3",
       "imported": true,
@@ -219,7 +227,7 @@
       "userData": {
         "gltfIndex": 0
       },
-      "ver": "1.0.12",
+      "ver": "1.0.14",
       "imported": true,
       "files": [
         ".json"
@@ -239,7 +247,8 @@
       }
     ],
     "fbx": {
-      "smartMaterialEnabled": true
+      "smartMaterialEnabled": true,
+      "matchMeshNames": false
     },
     "animationImportSettings": [
       {
@@ -251,7 +260,8 @@
             "name": "a",
             "from": 0,
             "to": 0.5833333134651184,
-            "wrapMode": 2
+            "wrapMode": 2,
+            "previousId": "98912"
           }
         ]
       }
@@ -276,6 +286,24 @@
       ],
       "scenes": [
         "dbb20a9b-057c-44b5-b87e-3b829ed4cef5@ad754"
+      ]
+    },
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
       ]
     }
   }

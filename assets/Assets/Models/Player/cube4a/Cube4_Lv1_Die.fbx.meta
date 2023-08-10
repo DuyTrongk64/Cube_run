@@ -1,5 +1,5 @@
 {
-  "ver": "2.3.4",
+  "ver": "2.3.8",
   "importer": "fbx",
   "imported": true,
   "uuid": "5dbf669b-32a9-49eb-b21e-af5ed3882793",
@@ -14,9 +14,10 @@
       "id": "b12f7",
       "name": "cube4.mesh",
       "userData": {
-        "gltfIndex": 0
+        "gltfIndex": 0,
+        "triangleCount": 2930
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -31,9 +32,10 @@
       "id": "9592c",
       "name": "wp_cap1.mesh",
       "userData": {
-        "gltfIndex": 1
+        "gltfIndex": 1,
+        "triangleCount": 58
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -57,7 +59,7 @@
         },
         "events": []
       },
-      "ver": "1.0.16",
+      "ver": "1.0.17",
       "imported": true,
       "files": [
         ".cconb"
@@ -88,7 +90,10 @@
       "id": "612f0",
       "name": "file4.image",
       "userData": {
-        "gltfIndex": 0
+        "gltfIndex": 0,
+        "fixAlphaTransparencyArtifacts": true,
+        "hasAlpha": true,
+        "type": "texture"
       },
       "ver": "1.0.3",
       "imported": true,
@@ -105,7 +110,10 @@
       "id": "b896e",
       "name": "file6.image",
       "userData": {
-        "gltfIndex": 1
+        "gltfIndex": 1,
+        "fixAlphaTransparencyArtifacts": true,
+        "hasAlpha": true,
+        "type": "texture"
       },
       "ver": "1.0.3",
       "imported": true,
@@ -202,7 +210,7 @@
       "userData": {
         "gltfIndex": 0
       },
-      "ver": "1.0.12",
+      "ver": "1.0.14",
       "imported": true,
       "files": [
         ".json"
@@ -222,7 +230,8 @@
       }
     ],
     "fbx": {
-      "smartMaterialEnabled": true
+      "smartMaterialEnabled": true,
+      "matchMeshNames": false
     },
     "animationImportSettings": [
       {
@@ -234,7 +243,8 @@
             "name": "Cube4_Lv1_Die",
             "from": 0,
             "to": 0.625,
-            "wrapMode": 2
+            "wrapMode": 2,
+            "previousId": "823e3"
           }
         ]
       }
@@ -258,6 +268,24 @@
       ],
       "scenes": [
         "5dbf669b-32a9-49eb-b21e-af5ed3882793@aa659"
+      ]
+    },
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
       ]
     }
   }

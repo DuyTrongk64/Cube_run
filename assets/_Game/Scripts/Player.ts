@@ -1,12 +1,9 @@
-import { _decorator, Camera, CameraComponent, Component, Event, EventMouse, EventTouch, input, Input, misc, Node, Quat, SystemEvent, tween, UITransform, Vec2, Vec3 } from 'cc';
+import { _decorator, Animation, Camera, CameraComponent, Component, Event, EventMouse, EventTouch, input, Input, misc, Node, Prefab, Quat, SystemEvent, tween, UITransform, Vec2, Vec3 } from 'cc';
 import { Utilities } from './Utilities';
 const { ccclass, property } = _decorator;
 
 @ccclass('Player')
 export class Player extends Component {
-
-    // @property(Camera)
-    // camera: Camera = null;
 
     private hp: number;
 
@@ -15,6 +12,9 @@ export class Player extends Component {
     private canMove: boolean;
 
     private isTouch: boolean;
+
+    @property({type: Prefab})
+    animation_node: Prefab | null = null;
 
     // current character position
     private _curPos: Vec3 = new Vec3();
@@ -52,6 +52,7 @@ export class Player extends Component {
     private onTouchBegan(event: EventTouch) {
         this.canMove = true;
         this.isTouch = true;
+        this.animation_node.play('a');
         this.node.getPosition(this._curPos);
         this.node.setRotation(new Quat(0, 1, 0, 0));
     }

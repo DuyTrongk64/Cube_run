@@ -1,5 +1,5 @@
 {
-  "ver": "2.3.4",
+  "ver": "2.3.8",
   "importer": "fbx",
   "imported": true,
   "uuid": "d2d21029-827c-4726-8b2e-266bc5873096",
@@ -12,9 +12,10 @@
       "id": "aa86e",
       "name": "wall1mx1m.mesh",
       "userData": {
-        "gltfIndex": 0
+        "gltfIndex": 0,
+        "triangleCount": 20
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -47,7 +48,7 @@
       "userData": {
         "gltfIndex": 0
       },
-      "ver": "1.0.12",
+      "ver": "1.0.14",
       "imported": true,
       "files": [
         ".json"
@@ -58,7 +59,8 @@
   "userData": {
     "imageMetas": [],
     "fbx": {
-      "smartMaterialEnabled": true
+      "smartMaterialEnabled": true,
+      "matchMeshNames": false
     },
     "redirect": "d2d21029-827c-4726-8b2e-266bc5873096@ae40e",
     "assetFinder": {
@@ -72,6 +74,24 @@
       ],
       "scenes": [
         "d2d21029-827c-4726-8b2e-266bc5873096@ae40e"
+      ]
+    },
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
       ]
     }
   }

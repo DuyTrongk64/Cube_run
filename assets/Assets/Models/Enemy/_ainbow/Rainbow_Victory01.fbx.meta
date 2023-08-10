@@ -1,5 +1,5 @@
 {
-  "ver": "2.3.4",
+  "ver": "2.3.8",
   "importer": "fbx",
   "imported": true,
   "uuid": "bbfd3630-8206-4d51-b088-fe28c82046df",
@@ -23,7 +23,7 @@
         },
         "events": []
       },
-      "ver": "1.0.16",
+      "ver": "1.0.17",
       "imported": true,
       "files": [
         ".cconb"
@@ -37,9 +37,10 @@
       "id": "e00e9",
       "name": "boss_rainbow.mesh",
       "userData": {
-        "gltfIndex": 0
+        "gltfIndex": 0,
+        "triangleCount": 3052
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -71,7 +72,10 @@
       "id": "adacb",
       "name": "file2.image",
       "userData": {
-        "gltfIndex": 0
+        "gltfIndex": 0,
+        "fixAlphaTransparencyArtifacts": true,
+        "hasAlpha": true,
+        "type": "texture"
       },
       "ver": "1.0.3",
       "imported": true,
@@ -129,7 +133,7 @@
       "userData": {
         "gltfIndex": 0
       },
-      "ver": "1.0.12",
+      "ver": "1.0.14",
       "imported": true,
       "files": [
         ".json"
@@ -145,7 +149,8 @@
       }
     ],
     "fbx": {
-      "smartMaterialEnabled": true
+      "smartMaterialEnabled": true,
+      "matchMeshNames": false
     },
     "animationImportSettings": [
       {
@@ -157,7 +162,8 @@
             "name": "a",
             "from": 0,
             "to": 0.9583333134651184,
-            "wrapMode": 2
+            "wrapMode": 2,
+            "previousId": "98912"
           }
         ]
       }
@@ -178,6 +184,24 @@
       ],
       "scenes": [
         "bbfd3630-8206-4d51-b088-fe28c82046df@c6348"
+      ]
+    },
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
       ]
     }
   }

@@ -1,5 +1,5 @@
 {
-  "ver": "2.3.4",
+  "ver": "2.3.8",
   "importer": "fbx",
   "imported": true,
   "uuid": "bf49717f-1662-439f-afc7-30f35a8aa1be",
@@ -31,7 +31,10 @@
       "id": "68267",
       "name": "wp_cap5a_rig01:file2.image",
       "userData": {
-        "gltfIndex": 0
+        "gltfIndex": 0,
+        "fixAlphaTransparencyArtifacts": true,
+        "hasAlpha": true,
+        "type": "texture"
       },
       "ver": "1.0.3",
       "imported": true,
@@ -48,9 +51,10 @@
       "id": "cb503",
       "name": "wp_cap5a_rig01:wp_cap5a.mesh",
       "userData": {
-        "gltfIndex": 0
+        "gltfIndex": 0,
+        "triangleCount": 108
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -65,9 +69,10 @@
       "id": "b434a",
       "name": "Arm.mesh",
       "userData": {
-        "gltfIndex": 1
+        "gltfIndex": 1,
+        "triangleCount": 240
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -82,9 +87,10 @@
       "id": "cd713",
       "name": "Leg.mesh",
       "userData": {
-        "gltfIndex": 2
+        "gltfIndex": 2,
+        "triangleCount": 176
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -99,9 +105,10 @@
       "id": "cbcd6",
       "name": "Body.mesh",
       "userData": {
-        "gltfIndex": 3
+        "gltfIndex": 3,
+        "triangleCount": 3716
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -125,7 +132,7 @@
         },
         "events": []
       },
-      "ver": "1.0.16",
+      "ver": "1.0.17",
       "imported": true,
       "files": [
         ".cconb"
@@ -190,7 +197,10 @@
       "id": "4df74",
       "name": "chanTay:file5.image",
       "userData": {
-        "gltfIndex": 1
+        "gltfIndex": 1,
+        "fixAlphaTransparencyArtifacts": true,
+        "hasAlpha": true,
+        "type": "texture"
       },
       "ver": "1.0.3",
       "imported": true,
@@ -207,7 +217,10 @@
       "id": "39d6e",
       "name": "file5.image",
       "userData": {
-        "gltfIndex": 2
+        "gltfIndex": 2,
+        "fixAlphaTransparencyArtifacts": true,
+        "hasAlpha": true,
+        "type": "texture"
       },
       "ver": "1.0.3",
       "imported": true,
@@ -343,7 +356,7 @@
       "userData": {
         "gltfIndex": 0
       },
-      "ver": "1.0.12",
+      "ver": "1.0.14",
       "imported": true,
       "files": [
         ".json"
@@ -367,7 +380,8 @@
       }
     ],
     "fbx": {
-      "smartMaterialEnabled": true
+      "smartMaterialEnabled": true,
+      "matchMeshNames": false
     },
     "animationImportSettings": [
       {
@@ -379,7 +393,8 @@
             "name": "getHit",
             "from": 0,
             "to": 0.5,
-            "wrapMode": 2
+            "wrapMode": 2,
+            "previousId": "d031e"
           }
         ]
       }
@@ -410,6 +425,24 @@
       ],
       "scenes": [
         "bf49717f-1662-439f-afc7-30f35a8aa1be@37f1e"
+      ]
+    },
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
       ]
     }
   }

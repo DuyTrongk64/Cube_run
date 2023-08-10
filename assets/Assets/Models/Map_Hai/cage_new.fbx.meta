@@ -1,5 +1,5 @@
 {
-  "ver": "2.3.4",
+  "ver": "2.3.8",
   "importer": "fbx",
   "imported": true,
   "uuid": "d8015abe-d560-457e-8c9b-c284c4a223b8",
@@ -12,9 +12,10 @@
       "id": "10677",
       "name": "polySurface13.mesh",
       "userData": {
-        "gltfIndex": 1
+        "gltfIndex": 1,
+        "triangleCount": 118
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -29,9 +30,10 @@
       "id": "38609",
       "name": "polySurface28.mesh",
       "userData": {
-        "gltfIndex": 22
+        "gltfIndex": 22,
+        "triangleCount": 638
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -46,9 +48,10 @@
       "id": "67103",
       "name": "polySurface35.mesh",
       "userData": {
-        "gltfIndex": 7
+        "gltfIndex": 7,
+        "triangleCount": 188
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -63,9 +66,10 @@
       "id": "07cbd",
       "name": "polySurface10.mesh",
       "userData": {
-        "gltfIndex": 0
+        "gltfIndex": 0,
+        "triangleCount": 152
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -80,9 +84,10 @@
       "id": "18f17",
       "name": "polySurface30.mesh",
       "userData": {
-        "gltfIndex": 2
+        "gltfIndex": 2,
+        "triangleCount": 356
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -97,9 +102,10 @@
       "id": "5789b",
       "name": "polySurface31.mesh",
       "userData": {
-        "gltfIndex": 3
+        "gltfIndex": 3,
+        "triangleCount": 188
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -114,9 +120,10 @@
       "id": "cff1a",
       "name": "polySurface32.mesh",
       "userData": {
-        "gltfIndex": 4
+        "gltfIndex": 4,
+        "triangleCount": 356
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -131,9 +138,10 @@
       "id": "4854e",
       "name": "polySurface33.mesh",
       "userData": {
-        "gltfIndex": 5
+        "gltfIndex": 5,
+        "triangleCount": 188
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -148,9 +156,10 @@
       "id": "eff79",
       "name": "polySurface34.mesh",
       "userData": {
-        "gltfIndex": 6
+        "gltfIndex": 6,
+        "triangleCount": 118
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -165,9 +174,10 @@
       "id": "e9802",
       "name": "polySurface36.mesh",
       "userData": {
-        "gltfIndex": 8
+        "gltfIndex": 8,
+        "triangleCount": 356
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -182,9 +192,10 @@
       "id": "c9249",
       "name": "polySurface37.mesh",
       "userData": {
-        "gltfIndex": 9
+        "gltfIndex": 9,
+        "triangleCount": 118
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -199,9 +210,10 @@
       "id": "c1a6d",
       "name": "polySurface38.mesh",
       "userData": {
-        "gltfIndex": 10
+        "gltfIndex": 10,
+        "triangleCount": 114
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -216,9 +228,10 @@
       "id": "9bd4d",
       "name": "polySurface39.mesh",
       "userData": {
-        "gltfIndex": 11
+        "gltfIndex": 11,
+        "triangleCount": 114
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -233,9 +246,10 @@
       "id": "306cf",
       "name": "polySurface18.mesh",
       "userData": {
-        "gltfIndex": 12
+        "gltfIndex": 12,
+        "triangleCount": 638
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -250,9 +264,10 @@
       "id": "32e93",
       "name": "polySurface19.mesh",
       "userData": {
-        "gltfIndex": 13
+        "gltfIndex": 13,
+        "triangleCount": 422
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -267,9 +282,10 @@
       "id": "0d2eb",
       "name": "polySurface20.mesh",
       "userData": {
-        "gltfIndex": 14
+        "gltfIndex": 14,
+        "triangleCount": 638
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -284,9 +300,10 @@
       "id": "950fb",
       "name": "polySurface21.mesh",
       "userData": {
-        "gltfIndex": 15
+        "gltfIndex": 15,
+        "triangleCount": 422
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -301,9 +318,10 @@
       "id": "0a947",
       "name": "polySurface22.mesh",
       "userData": {
-        "gltfIndex": 16
+        "gltfIndex": 16,
+        "triangleCount": 638
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -318,9 +336,10 @@
       "id": "635cf",
       "name": "polySurface23.mesh",
       "userData": {
-        "gltfIndex": 17
+        "gltfIndex": 17,
+        "triangleCount": 422
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -335,9 +354,10 @@
       "id": "9710d",
       "name": "polySurface24.mesh",
       "userData": {
-        "gltfIndex": 18
+        "gltfIndex": 18,
+        "triangleCount": 638
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -352,9 +372,10 @@
       "id": "c6d21",
       "name": "polySurface25.mesh",
       "userData": {
-        "gltfIndex": 19
+        "gltfIndex": 19,
+        "triangleCount": 422
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -369,9 +390,10 @@
       "id": "33ebb",
       "name": "polySurface26.mesh",
       "userData": {
-        "gltfIndex": 20
+        "gltfIndex": 20,
+        "triangleCount": 638
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -386,9 +408,10 @@
       "id": "349d8",
       "name": "polySurface27.mesh",
       "userData": {
-        "gltfIndex": 21
+        "gltfIndex": 21,
+        "triangleCount": 422
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -403,9 +426,10 @@
       "id": "9f9f4",
       "name": "polySurface29.mesh",
       "userData": {
-        "gltfIndex": 23
+        "gltfIndex": 23,
+        "triangleCount": 422
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -438,7 +462,7 @@
       "userData": {
         "gltfIndex": 0
       },
-      "ver": "1.0.12",
+      "ver": "1.0.14",
       "imported": true,
       "files": [
         ".json"
@@ -449,7 +473,8 @@
   "userData": {
     "imageMetas": [],
     "fbx": {
-      "smartMaterialEnabled": true
+      "smartMaterialEnabled": true,
+      "matchMeshNames": false
     },
     "redirect": "d8015abe-d560-457e-8c9b-c284c4a223b8@c604f",
     "assetFinder": {
@@ -486,6 +511,24 @@
       ],
       "scenes": [
         "d8015abe-d560-457e-8c9b-c284c4a223b8@c604f"
+      ]
+    },
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
       ]
     }
   }
