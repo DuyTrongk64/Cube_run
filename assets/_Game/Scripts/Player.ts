@@ -1,4 +1,4 @@
-import { _decorator, Animation, Camera, CameraComponent, Component, Event, EventMouse, EventTouch, input, Input, misc, Node, Prefab, Quat, SystemEvent, tween, UITransform, Vec2, Vec3 } from 'cc';
+import { _decorator, Animation, Camera, CameraComponent, Collider, ColliderComponent, Component, Event, EventMouse, EventTouch, input, Input, MeshRenderer, misc, Node, Prefab, Quat, SystemEvent, tween, UITransform, Vec2, Vec3,BoxCollider,  ICollisionEvent, ITriggerEvent } from 'cc';
 import { Utilities } from './Utilities';
 const { ccclass, property } = _decorator;
 
@@ -13,8 +13,11 @@ export class Player extends Component {
 
     private isTouch: boolean;
 
-    @property({type: Prefab})
-    animation_node: Prefab | null = null;
+    @property(Node)
+    idle: Node = null;
+
+    @property(Node)
+    run: Node = null;
 
     // current character position
     private _curPos: Vec3 = new Vec3();
@@ -23,12 +26,25 @@ export class Player extends Component {
     // target position of the character
     private _targetPos: Vec3 = new Vec3();
 
+    private interactableObject: MeshRenderer;
     onLoad() {
         //set up move object
         input.on(Input.EventType.TOUCH_START, this.onTouchBegan, this);
         input.on(Input.EventType.TOUCH_MOVE, this.onTouchMoved, this);
         input.on(Input.EventType.TOUCH_END, this.onTouchEnd, this);
-        
+        this.interactableObject = this.idle.getComponentInChildren(MeshRenderer);
+        this.idle.getComponent(ColliderComponent);
+        this.run.getComponent(ColliderComponent);
+
+        // Xử lý sự kiện va chạm
+        let collider = this.run.getComponentInChildren(Collider);
+        // Listening to 'onCollisionStay' Events
+        collider.on('onTriggerEnter', this.onCollision, this);
+    }
+
+    private onCollision (event: ITriggerEvent) {
+        console.log(event.type, event);
+        console.log("va cham");
     }
 
     start() {
@@ -49,16 +65,18 @@ export class Player extends Component {
     }
 
     //bat dau an xuong
-    private onTouchBegan(event: EventTouch) {
+    onTouchBegan(event) {
         this.canMove = true;
         this.isTouch = true;
-        this.animation_node.play('a');
         this.node.getPosition(this._curPos);
         this.node.setRotation(new Quat(0, 1, 0, 0));
+        this.idle.active = false;
+        this.run.active = true;
+        console.log(this.interactableObject);
     }
 
     //di chuyen chuot
-    private onTouchMoved(event) {
+    onTouchMoved(event) {
 
         let touches = event.getTouches();
 
@@ -70,9 +88,11 @@ export class Player extends Component {
         // this._targetPos.x = this._curPos.x + delta1.x;
 
         // console.log(this._targetPos.x);
+
+
     }
 
-    private onTouchEnd(event) {
+    onTouchEnd(event) {
         this.isTouch = false;
     }
 
@@ -82,11 +102,11 @@ export class Player extends Component {
             let curPos = this.node.getPosition();
             curPos.z -= this.speed * deltaTime;
             this.node.setPosition(curPos);
-            
+
         }
         if (this.isTouch) {
             this.node.getPosition(this._curPos);
-            this._targetPos.x = this._deltaPos.x * deltaTime / 2;
+            this._targetPos.x = this._deltaPos.x * deltaTime / 10;
             //console.log(this._deltaPos.x);
             Vec3.add(this._curPos, this._curPos, this._targetPos);
             this.node.setPosition(this._curPos);
@@ -95,5 +115,6 @@ export class Player extends Component {
 
     update(deltaTime: number) {
         this.startRun(deltaTime);
+        //this.interactableObject.wo
     }
 }
