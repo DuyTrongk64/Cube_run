@@ -1,15 +1,9 @@
 import { _decorator, Animation, Camera, CameraComponent, Collider, ColliderComponent, Component, Event, EventMouse, EventTouch, input, Input, MeshRenderer, misc, Node, Prefab, Quat, SystemEvent, tween, UITransform, Vec2, Vec3,BoxCollider,  ICollisionEvent, ITriggerEvent, director } from 'cc';
-import { Utilities } from './Utilities';
+
 const { ccclass, property } = _decorator;
 
-@ccclass('Player')
-export class Player extends Component {
-
-    @property({type: Animation})
-    anim: Animation | null = null;
-
-    private hp: number;
-
+@ccclass('TestCollision')
+export class TestCollision extends Component {
     protected speed: number;
 
     private canMove: boolean;
@@ -29,24 +23,22 @@ export class Player extends Component {
         input.on(Input.EventType.TOUCH_START, this.onTouchBegan, this);
         input.on(Input.EventType.TOUCH_MOVE, this.onTouchMoved, this);
         input.on(Input.EventType.TOUCH_END, this.onTouchEnd, this);
-
-
-        // Xử lý sự kiện va chạm
-        let collider = this.getComponent(Collider);
-        // Listening to 'onCollisionStay' Events
-        collider.on('onTriggerEnter', this.onCollision, this);
         
+
+    }
+
+
+    start() {
+        this.speed = 5;
+        this.canMove = false;
+        this.isTouch = false;
+
+        let collider = this.node.getComponent(Collider);
+        collider.on('onCollisionEnter', this.onCollision, this);
     }
 
     private onCollision (event: ICollisionEvent) {
         console.log(event.type, event);
-    }
-    
-    start() {
-        this.hp = 5;
-        this.speed = 5;
-        this.canMove = false;
-        this.isTouch = false;
     }
 
     onDestroy() {
@@ -65,10 +57,6 @@ export class Player extends Component {
         this.isTouch = true;
         this.node.getPosition(this._curPos);
         this.node.setRotation(new Quat(0, 1, 0, 0));
-        
-        console.log(this.interactableObject);
-
-        this.anim.play('run');
     }
 
     //di chuyen chuot
@@ -114,3 +102,5 @@ export class Player extends Component {
         //this.interactableObject.wo
     }
 }
+
+

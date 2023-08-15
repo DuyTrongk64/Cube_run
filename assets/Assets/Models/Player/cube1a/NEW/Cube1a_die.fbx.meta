@@ -45,7 +45,7 @@
       "uuid": "f46e9cef-dc69-49bf-a5a4-e8c849b58645@98912",
       "displayName": "",
       "id": "98912",
-      "name": "a.animation",
+      "name": "die.animation",
       "userData": {
         "gltfIndex": 0,
         "wrapMode": 2,
@@ -217,7 +217,7 @@
         "fps": 30,
         "splits": [
           {
-            "name": "a",
+            "name": "die",
             "from": 0,
             "to": 0.6666666865348816,
             "wrapMode": 2,

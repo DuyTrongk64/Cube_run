@@ -61,7 +61,7 @@
       "uuid": "2761d1f8-d243-4fdb-91b0-ee0ef024d411@98912",
       "displayName": "",
       "id": "98912",
-      "name": "a.animation",
+      "name": "idle.animation",
       "userData": {
         "gltfIndex": 0,
         "wrapMode": 2,
@@ -217,7 +217,7 @@
         "fps": 30,
         "splits": [
           {
-            "name": "a",
+            "name": "idle",
             "from": 0,
             "to": 0.6666666865348816,
             "wrapMode": 2,

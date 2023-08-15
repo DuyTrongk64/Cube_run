@@ -45,7 +45,7 @@
       "uuid": "bc14c618-59d8-49ed-acbd-c009e7ba3ec9@98912",
       "displayName": "",
       "id": "98912",
-      "name": "a.animation",
+      "name": "run.animation",
       "userData": {
         "gltfIndex": 0,
         "wrapMode": 2,
@@ -54,7 +54,11 @@
           "from": 0,
           "to": 0.5
         },
-        "events": []
+        "events": [],
+        "embeddedPlayers": [],
+        "editorExtras": {},
+        "speed": 1,
+        "auxiliaryCurves": {}
       },
       "ver": "1.0.17",
       "imported": true,
@@ -217,7 +221,7 @@
         "fps": 30,
         "splits": [
           {
-            "name": "a",
+            "name": "run",
             "from": 0,
             "to": 0.5,
             "wrapMode": 2,
