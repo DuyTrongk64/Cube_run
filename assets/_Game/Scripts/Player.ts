@@ -1,5 +1,5 @@
 import { _decorator, Animation, Camera, CameraComponent, Collider, ColliderComponent, Component, Event, EventMouse, EventTouch, input, Input, MeshRenderer, misc, Node, Prefab, Quat, SystemEvent, tween, UITransform, Vec2, Vec3, BoxCollider, ICollisionEvent, ITriggerEvent, director } from 'cc';
-import { Utilities } from './Utilities';
+import { GameManager } from './Manager/GameManager';
 const { ccclass, property } = _decorator;
 
 @ccclass('Player')
@@ -19,7 +19,7 @@ export class Player extends Component {
 
     private isTouch: boolean;
 
-
+    private totalTime: number = 0;
 
     // current character position
     private _curPos: Vec3 = new Vec3();
@@ -28,7 +28,7 @@ export class Player extends Component {
     // target position of the character
     private _targetPos: Vec3 = new Vec3();
 
-    private interactableObject: MeshRenderer;
+    
     onLoad() {
         //set up move object
         input.on(Input.EventType.TOUCH_START, this.onTouchBegan, this);
@@ -43,21 +43,6 @@ export class Player extends Component {
 
     }
 
-    private onCollision(event: ICollisionEvent) {
-        //console.log("va cham");
-        if(this.state == 1){
-            this.canMove = true;
-            this.isTouch = true;
-            this.node.getPosition(this._curPos);
-            this.node.setRotation(new Quat(0, 1, 0, 0));
-            this.state = 0;
-            this.anim.play('run');
-        }
-        console.log(event.otherCollider.name);
-        if(event.otherCollider.name == 'Cube<BoxCollider>'){
-            this.node.active = false;
-        }
-    }
 
     start() {
         this.hp = 5;
@@ -76,6 +61,26 @@ export class Player extends Component {
 
     }
 
+    private onCollision(event: ICollisionEvent) {
+        //console.log("va cham");
+        if(this.state == 1){
+            this.canMove = true;
+            this.isTouch = true;
+            this.node.getPosition(this._curPos);
+            this.node.setRotation(new Quat(0, 1, 0, 0));
+            this.state = 0;
+            this.anim.play('run');
+            GameManager.Ins.coutPlayer ++;
+            console.log(GameManager.Ins.coutPlayer);
+        }
+        console.log(event.otherCollider.name);
+        if(event.otherCollider.name == 'Cube<BoxCollider>'){
+            this.node.active = false;
+            GameManager.Ins.coutPlayer --;
+
+        }
+    }
+
     //bat dau an xuong
     onTouchBegan(event) {
         if (this.state == 0) {
@@ -92,18 +97,11 @@ export class Player extends Component {
 
     //di chuyen chuot
     onTouchMoved(event) {
-
+    
         let touches = event.getTouches();
 
         let touch1 = touches[0];
         this._deltaPos = touch1.getDelta();
-
-        // this.node.getPosition(this._curPos);
-
-        // this._targetPos.x = this._curPos.x + delta1.x;
-
-        // console.log(this._targetPos.x);
-
 
     }
 
@@ -113,7 +111,6 @@ export class Player extends Component {
 
     startRun(deltaTime: number) {
         if (this.canMove) {
-
             let curPos = this.node.getPosition();
             curPos.z -= this.speed * deltaTime;
             this.node.setPosition(curPos);
@@ -121,7 +118,7 @@ export class Player extends Component {
         }
         if (this.isTouch) {
             this.node.getPosition(this._curPos);
-            this._targetPos.x = this._deltaPos.x * deltaTime / 10;
+            this._targetPos.x = this._deltaPos.x * deltaTime / 8;
             //console.log(this._deltaPos.x);
             Vec3.add(this._curPos, this._curPos, this._targetPos);
             this.node.setPosition(this._curPos);
@@ -130,6 +127,15 @@ export class Player extends Component {
 
     update(deltaTime: number) {
         this.startRun(deltaTime);
-        //this.interactableObject.wo
+
+        // if(this.canMove){
+        //     this.totalTime+=deltaTime;
+        // }
+        // if(this.state == 0){
+        //     let curPlPos = this.node.getPosition();
+        // if (curPlPos.z <= -5) {
+        //     console.log(this.totalTime);
+        // }
+        // }
     }
 }

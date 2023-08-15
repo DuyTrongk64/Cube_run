@@ -8,21 +8,24 @@ export class Camera extends Component {
     @property(Node)
     player: Node = null;
 
-    private lastPlPos: Vec3 = new Vec3();
-    private curPlPos: Vec3 = new Vec3();
+    private speed: number;
+    private totalTime: number;
 
     start() {
-        this.lastPlPos = this.player.getPosition();
-        this.lastPlPos.z = -5;
+        this.speed = 5;
+        this.totalTime = 0;
+
     }
 
+    startMove(deltaTime: number){
+        let curPos = this.node.getPosition();
+            curPos.z -= this.speed * deltaTime;
+            this.node.setPosition(curPos);
+    }
     update(deltaTime: number) {
-        this.curPlPos = this.player.getPosition();
-        if (this.curPlPos.z <= -5) {
-            let current_position = this.node.getPosition();
-            current_position.z+=(this.curPlPos.z-this.lastPlPos.z);
-            this.node.setPosition(current_position);
-            this.lastPlPos=this.curPlPos;
+        let curPlPos = this.player.getPosition();
+        if (curPlPos.z <= -5) {
+            this.startMove(deltaTime);
         }
     }
 }
