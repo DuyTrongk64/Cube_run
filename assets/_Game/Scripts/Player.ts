@@ -1,12 +1,15 @@
-import { _decorator, Animation, Camera, CameraComponent, Collider, ColliderComponent, Component, Event, EventMouse, EventTouch, input, Input, MeshRenderer, misc, Node, Prefab, Quat, SystemEvent, tween, UITransform, Vec2, Vec3,BoxCollider,  ICollisionEvent, ITriggerEvent, director } from 'cc';
+import { _decorator, Animation, Camera, CameraComponent, Collider, ColliderComponent, Component, Event, EventMouse, EventTouch, input, Input, MeshRenderer, misc, Node, Prefab, Quat, SystemEvent, tween, UITransform, Vec2, Vec3, BoxCollider, ICollisionEvent, ITriggerEvent, director } from 'cc';
 import { Utilities } from './Utilities';
 const { ccclass, property } = _decorator;
 
 @ccclass('Player')
 export class Player extends Component {
 
-    @property({type: Animation})
+    @property({ type: Animation })
     anim: Animation | null = null;
+
+    @property(Number)
+    state: number = 0;
 
     private hp: number;
 
@@ -15,6 +18,8 @@ export class Player extends Component {
     private canMove: boolean;
 
     private isTouch: boolean;
+
+
 
     // current character position
     private _curPos: Vec3 = new Vec3();
@@ -32,16 +37,28 @@ export class Player extends Component {
 
 
         // Xử lý sự kiện va chạm
-        let collider = this.getComponent(Collider);
+        let collider = this.node.getComponent(Collider);
         // Listening to 'onCollisionStay' Events
-        collider.on('onTriggerEnter', this.onCollision, this);
-        
+        collider.on('onCollisionEnter', this.onCollision, this);
+
     }
 
-    private onCollision (event: ICollisionEvent) {
-        console.log(event.type, event);
+    private onCollision(event: ICollisionEvent) {
+        //console.log("va cham");
+        if(this.state == 1){
+            this.canMove = true;
+            this.isTouch = true;
+            this.node.getPosition(this._curPos);
+            this.node.setRotation(new Quat(0, 1, 0, 0));
+            this.state = 0;
+            this.anim.play('run');
+        }
+        console.log(event.otherCollider.name);
+        if(event.otherCollider.name == 'Cube<BoxCollider>'){
+            this.node.active = false;
+        }
     }
-    
+
     start() {
         this.hp = 5;
         this.speed = 5;
@@ -61,14 +78,16 @@ export class Player extends Component {
 
     //bat dau an xuong
     onTouchBegan(event) {
-        this.canMove = true;
-        this.isTouch = true;
-        this.node.getPosition(this._curPos);
-        this.node.setRotation(new Quat(0, 1, 0, 0));
-        
-        console.log(this.interactableObject);
+        if (this.state == 0) {
 
-        this.anim.play('run');
+            this.canMove = true;
+            this.isTouch = true;
+            this.node.getPosition(this._curPos);
+            this.node.setRotation(new Quat(0, 1, 0, 0));
+
+            this.anim.play('run');
+        }
+
     }
 
     //di chuyen chuot

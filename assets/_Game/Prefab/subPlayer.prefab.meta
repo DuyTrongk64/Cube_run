@@ -2,12 +2,12 @@
   "ver": "1.1.45",
   "importer": "prefab",
   "imported": true,
-  "uuid": "fb80fb2d-3ef3-495f-a681-10f2df0a1368",
+  "uuid": "669e4976-9791-4983-a3b7-cac94a98d2fc",
   "files": [
     ".json"
   ],
   "subMetas": {},
   "userData": {
-    "syncNodeName": "Cube1a_run"
+    "syncNodeName": "subPlayer"
   }
 }
