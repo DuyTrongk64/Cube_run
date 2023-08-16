@@ -18,6 +18,16 @@ export class GameManager extends Component {
 
     public coutPlayer: number;
 
+    public sumPlayer: number = 1;
+
+    @property(Node)
+    public player_field: Node[] = [];
+ 
+    @property(Node)
+    public enemies_field: Node[] = [];
+
+    public playerList: Array<Player> = [];
+
     start() {
         this.coutPlayer = 1;
     }
@@ -25,10 +35,13 @@ export class GameManager extends Component {
     update(deltaTime: number) {
         if (this.coutPlayer == 0){
             console.log("pause game");
-
             game.pause();
         }
+
+        
     }
+
+    
 }
 
 

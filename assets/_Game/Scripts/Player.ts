@@ -21,6 +21,8 @@ export class Player extends Component {
 
     private totalTime: number = 0;
 
+    protected id: number = 1;
+
     // current character position
     private _curPos: Vec3 = new Vec3();
     // the difference in position of the current frame movement during each move
@@ -49,6 +51,9 @@ export class Player extends Component {
         this.speed = 5;
         this.canMove = false;
         this.isTouch = false;
+        if(this.state == 0){
+            GameManager.Ins.playerList.push(this);
+        }
     }
 
     onDestroy() {
@@ -71,13 +76,26 @@ export class Player extends Component {
             this.state = 0;
             this.anim.play('run');
             GameManager.Ins.coutPlayer ++;
-            console.log(GameManager.Ins.coutPlayer);
+            GameManager.Ins.sumPlayer ++;
+            this.id = GameManager.Ins.sumPlayer;
+            //console.log(GameManager.Ins.coutPlayer);
+            GameManager.Ins.playerList.push(this);
+
         }
-        console.log(event.otherCollider.name);
+        
         if(event.otherCollider.name == 'Cube<BoxCollider>'){
             this.node.active = false;
             GameManager.Ins.coutPlayer --;
+            GameManager.Ins.playerList.splice(this.id-1,1);
+            //console.log(GameManager.Ins.playerList);
+        }
 
+        if(event.otherCollider.name == 'End<BoxCollider>'){
+            for(let i =0;i<GameManager.Ins.coutPlayer;i++){
+                GameManager.Ins.playerList[i].node.setPosition(GameManager.Ins.player_field[i].getWorldPosition());
+                GameManager.Ins.playerList[i].canMove = false;
+                GameManager.Ins.playerList[i].anim.play('idle');
+            }
         }
     }
 
@@ -128,14 +146,9 @@ export class Player extends Component {
     update(deltaTime: number) {
         this.startRun(deltaTime);
 
-        // if(this.canMove){
-        //     this.totalTime+=deltaTime;
-        // }
-        // if(this.state == 0){
-        //     let curPlPos = this.node.getPosition();
-        // if (curPlPos.z <= -5) {
-        //     console.log(this.totalTime);
-        // }
+        // let cur = this.node.getPosition();
+        // if(cur.z < -40){
+        //     console.log(GameManager.Ins.ids);
         // }
     }
 }
