@@ -12,7 +12,7 @@ export class Camera extends Component {
     private totalTime: number;
 
     start() {
-        this.speed = 5;
+        this.speed = 10;
         this.totalTime = 0;
 
     }

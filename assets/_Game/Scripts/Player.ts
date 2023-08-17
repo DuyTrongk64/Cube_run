@@ -13,7 +13,7 @@ export class Player extends Component {
 
     private hp: number;
 
-    protected speed: number;
+    private speed: number;
 
     private canMove: boolean;
 
@@ -48,7 +48,7 @@ export class Player extends Component {
 
     start() {
         this.hp = 5;
-        this.speed = 5;
+        this.speed = 10;
         this.canMove = false;
         this.isTouch = false;
         if(this.state == 0){
@@ -95,6 +95,7 @@ export class Player extends Component {
                 GameManager.Ins.playerList[i].node.setPosition(GameManager.Ins.player_field[i].getWorldPosition());
                 GameManager.Ins.playerList[i].canMove = false;
                 GameManager.Ins.playerList[i].anim.play('idle');
+                this.node.setRotation(new Quat(0, -1, 0, 0));
             }
         }
     }
@@ -136,7 +137,7 @@ export class Player extends Component {
         }
         if (this.isTouch) {
             this.node.getPosition(this._curPos);
-            this._targetPos.x = this._deltaPos.x * deltaTime / 8;
+            this._targetPos.x = this._deltaPos.x * deltaTime;
             //console.log(this._deltaPos.x);
             Vec3.add(this._curPos, this._curPos, this._targetPos);
             this.node.setPosition(this._curPos);
