@@ -26,6 +26,9 @@ export class GameManager extends Component {
     @property(Node)
     public enemies_field: Node[] = [];
 
+    @property(Node)
+    public spawn_point: Node[] = [];
+
     public playerList: Array<Player> = [];
 
     start() {

@@ -1,0 +1,150 @@
+{
+  "ver": "2.3.8",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "45eb5b0c-0e23-408a-804d-fd43b12228b8",
+  "files": [],
+  "subMetas": {
+    "30087": {
+      "importer": "gltf-material",
+      "uuid": "45eb5b0c-0e23-408a-804d-fd43b12228b8@30087",
+      "displayName": "",
+      "id": "30087",
+      "name": "den.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "48588": {
+      "importer": "gltf-material",
+      "uuid": "45eb5b0c-0e23-408a-804d-fd43b12228b8@48588",
+      "displayName": "",
+      "id": "48588",
+      "name": "do1.material",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "be8c3": {
+      "importer": "gltf-mesh",
+      "uuid": "45eb5b0c-0e23-408a-804d-fd43b12228b8@be8c3",
+      "displayName": "",
+      "id": "be8c3",
+      "name": "chan.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "triangleCount": 96
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "d4e04": {
+      "importer": "gltf-mesh",
+      "uuid": "45eb5b0c-0e23-408a-804d-fd43b12228b8@d4e04",
+      "displayName": "",
+      "id": "d4e04",
+      "name": "xoay.mesh",
+      "userData": {
+        "gltfIndex": 1,
+        "triangleCount": 456
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "74f93": {
+      "importer": "gltf-material",
+      "uuid": "45eb5b0c-0e23-408a-804d-fd43b12228b8@74f93",
+      "displayName": "",
+      "id": "74f93",
+      "name": "xanh.material",
+      "userData": {
+        "gltfIndex": 2
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "0f381": {
+      "importer": "gltf-scene",
+      "uuid": "45eb5b0c-0e23-408a-804d-fd43b12228b8@0f381",
+      "displayName": "",
+      "id": "0f381",
+      "name": "trap_trugaingang.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "redirect": "45eb5b0c-0e23-408a-804d-fd43b12228b8@0f381",
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    },
+    "assetFinder": {
+      "meshes": [
+        "45eb5b0c-0e23-408a-804d-fd43b12228b8@be8c3",
+        "45eb5b0c-0e23-408a-804d-fd43b12228b8@d4e04"
+      ],
+      "skeletons": [],
+      "textures": [],
+      "materials": [
+        "45eb5b0c-0e23-408a-804d-fd43b12228b8@30087",
+        "45eb5b0c-0e23-408a-804d-fd43b12228b8@48588",
+        "45eb5b0c-0e23-408a-804d-fd43b12228b8@74f93"
+      ],
+      "scenes": [
+        "45eb5b0c-0e23-408a-804d-fd43b12228b8@0f381"
+      ]
+    }
+  }
+}

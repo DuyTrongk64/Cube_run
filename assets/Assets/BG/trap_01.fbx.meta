@@ -1,0 +1,97 @@
+{
+  "ver": "2.3.8",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "d39e4d90-29cf-41c6-a4a2-bb37c5d5e720",
+  "files": [],
+  "subMetas": {
+    "0d7d6": {
+      "importer": "gltf-mesh",
+      "uuid": "d39e4d90-29cf-41c6-a4a2-bb37c5d5e720@0d7d6",
+      "displayName": "",
+      "id": "0d7d6",
+      "name": "trap_01.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "triangleCount": 36
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "cd3cd": {
+      "importer": "gltf-material",
+      "uuid": "d39e4d90-29cf-41c6-a4a2-bb37c5d5e720@cd3cd",
+      "displayName": "",
+      "id": "cd3cd",
+      "name": "lambert7.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "107d4": {
+      "importer": "gltf-scene",
+      "uuid": "d39e4d90-29cf-41c6-a4a2-bb37c5d5e720@107d4",
+      "displayName": "",
+      "id": "107d4",
+      "name": "trap_01.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "redirect": "d39e4d90-29cf-41c6-a4a2-bb37c5d5e720@107d4",
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    },
+    "assetFinder": {
+      "meshes": [
+        "d39e4d90-29cf-41c6-a4a2-bb37c5d5e720@0d7d6"
+      ],
+      "skeletons": [],
+      "textures": [],
+      "materials": [
+        "d39e4d90-29cf-41c6-a4a2-bb37c5d5e720@cd3cd"
+      ],
+      "scenes": [
+        "d39e4d90-29cf-41c6-a4a2-bb37c5d5e720@107d4"
+      ]
+    }
+  }
+}
