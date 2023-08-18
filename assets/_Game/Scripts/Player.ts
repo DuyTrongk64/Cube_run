@@ -95,8 +95,10 @@ export class Player extends Component {
                 GameManager.Ins.playerList[i].node.setPosition(GameManager.Ins.player_field[i].getWorldPosition());
                 GameManager.Ins.playerList[i].canMove = false;
                 GameManager.Ins.playerList[i].anim.play('idle');
-                this.node.setRotation(new Quat(0, -1, 0, 0));
+                GameManager.Ins.playerList[i].node.setRotation(new Quat(0, 0, 0, 0));
+
             }
+
         }
     }
 
