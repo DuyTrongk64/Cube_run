@@ -67,7 +67,7 @@ export class Player extends Component {
     }
 
     private onCollision(event: ICollisionEvent) {
-        //console.log("va cham");
+        
         if(this.state == 1){
             this.canMove = true;
             this.isTouch = true;
@@ -139,7 +139,7 @@ export class Player extends Component {
         }
         if (this.isTouch) {
             this.node.getPosition(this._curPos);
-            this._targetPos.x = this._deltaPos.x * deltaTime;
+            this._targetPos.x = this._deltaPos.x * deltaTime/8;
             //console.log(this._deltaPos.x);
             Vec3.add(this._curPos, this._curPos, this._targetPos);
             this.node.setPosition(this._curPos);

@@ -13,6 +13,10 @@
         "index": 1,
         "name": "Trap"
       }
-    ]
+    ],
+    "collisionMatrix": {
+      "0": 3,
+      "1": 1
+    }
   }
 }
