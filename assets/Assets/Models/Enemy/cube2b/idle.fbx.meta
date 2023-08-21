@@ -48,7 +48,7 @@
       "uuid": "9d98900f-3807-448b-9d12-502f242c6206@73b7f",
       "displayName": "",
       "id": "73b7f",
-      "name": "Take 001.animation",
+      "name": "idle.animation",
       "userData": {
         "gltfIndex": 0,
         "wrapMode": 2,
@@ -83,46 +83,6 @@
       ],
       "subMetas": {}
     },
-    "adacb": {
-      "importer": "gltf-embeded-image",
-      "uuid": "9d98900f-3807-448b-9d12-502f242c6206@adacb",
-      "displayName": "",
-      "id": "adacb",
-      "name": "file2.image",
-      "userData": {
-        "gltfIndex": 0,
-        "fixAlphaTransparencyArtifacts": true,
-        "hasAlpha": true,
-        "type": "texture"
-      },
-      "ver": "1.0.3",
-      "imported": true,
-      "files": [
-        ".json",
-        ".png"
-      ],
-      "subMetas": {}
-    },
-    "b896e": {
-      "importer": "gltf-embeded-image",
-      "uuid": "9d98900f-3807-448b-9d12-502f242c6206@b896e",
-      "displayName": "",
-      "id": "b896e",
-      "name": "file6.image",
-      "userData": {
-        "gltfIndex": 1,
-        "fixAlphaTransparencyArtifacts": true,
-        "hasAlpha": true,
-        "type": "texture"
-      },
-      "ver": "1.0.3",
-      "imported": true,
-      "files": [
-        ".json",
-        ".png"
-      ],
-      "subMetas": {}
-    },
     "e873a": {
       "importer": "texture",
       "uuid": "9d98900f-3807-448b-9d12-502f242c6206@e873a",
@@ -137,7 +97,7 @@
         "mipfilter": "none",
         "anisotropy": 0,
         "isUuid": true,
-        "imageUuidOrDatabaseUri": "9d98900f-3807-448b-9d12-502f242c6206@adacb"
+        "imageUuidOrDatabaseUri": "6d14ff62-ca56-4ef9-adbf-136a1163a699"
       },
       "ver": "1.0.22",
       "imported": true,
@@ -160,41 +120,9 @@
         "mipfilter": "none",
         "anisotropy": 0,
         "isUuid": true,
-        "imageUuidOrDatabaseUri": "9d98900f-3807-448b-9d12-502f242c6206@b896e"
+        "imageUuidOrDatabaseUri": "6d14ff62-ca56-4ef9-adbf-136a1163a699"
       },
       "ver": "1.0.22",
-      "imported": true,
-      "files": [
-        ".json"
-      ],
-      "subMetas": {}
-    },
-    "b8e94": {
-      "importer": "gltf-material",
-      "uuid": "9d98900f-3807-448b-9d12-502f242c6206@b8e94",
-      "displayName": "",
-      "id": "b8e94",
-      "name": "text_char.material",
-      "userData": {
-        "gltfIndex": 0
-      },
-      "ver": "1.0.14",
-      "imported": true,
-      "files": [
-        ".json"
-      ],
-      "subMetas": {}
-    },
-    "bcc37": {
-      "importer": "gltf-material",
-      "uuid": "9d98900f-3807-448b-9d12-502f242c6206@bcc37",
-      "displayName": "",
-      "id": "bcc37",
-      "name": "text_char4.material",
-      "userData": {
-        "gltfIndex": 1
-      },
-      "ver": "1.0.14",
       "imported": true,
       "files": [
         ".json"
@@ -222,11 +150,13 @@
     "imageMetas": [
       {
         "name": "file2",
-        "uri": "9d98900f-3807-448b-9d12-502f242c6206@adacb"
+        "remap": "6d14ff62-ca56-4ef9-adbf-136a1163a699",
+        "uri": "db://assets/Assets/Models/Enemy/number text.png"
       },
       {
         "name": "file6",
-        "uri": "9d98900f-3807-448b-9d12-502f242c6206@b896e"
+        "remap": "6d14ff62-ca56-4ef9-adbf-136a1163a699",
+        "uri": "db://assets/Assets/Models/Enemy/number text.png"
       }
     ],
     "fbx": {
@@ -240,7 +170,7 @@
         "fps": 30,
         "splits": [
           {
-            "name": "Take 001",
+            "name": "idle",
             "from": 0,
             "to": 1.25,
             "wrapMode": 2,
@@ -263,8 +193,8 @@
         "9d98900f-3807-448b-9d12-502f242c6206@5189c"
       ],
       "materials": [
-        "9d98900f-3807-448b-9d12-502f242c6206@b8e94",
-        "9d98900f-3807-448b-9d12-502f242c6206@bcc37"
+        "90a4d69d-1fc6-44dc-a693-bf6f3e4cd6f1",
+        "ef5de654-7fae-46b8-9e31-4703622bc365"
       ],
       "scenes": [
         "9d98900f-3807-448b-9d12-502f242c6206@5f904"
@@ -287,6 +217,8 @@
           "faceCount": 0.1
         }
       ]
-    }
+    },
+    "dumpMaterials": true,
+    "materialDumpDir": "db://assets/Assets/Models/Enemy/cube2b/Materials_idle"
   }
 }

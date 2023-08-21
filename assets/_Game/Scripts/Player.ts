@@ -1,4 +1,4 @@
-import { _decorator, Animation, Camera, CameraComponent, Collider, ColliderComponent, Component, Event, EventMouse, EventTouch, input, Input, MeshRenderer, misc, Node, Prefab, Quat, SystemEvent, tween, UITransform, Vec2, Vec3, BoxCollider, ICollisionEvent, ITriggerEvent, director } from 'cc';
+import { _decorator, Animation, Camera, CameraComponent, Collider, ColliderComponent, Component, Event, EventMouse, EventTouch, input, Input, MeshRenderer, misc, Node, Prefab, Quat, SystemEvent, tween, UITransform, Vec2, Vec3, BoxCollider, ICollisionEvent, ITriggerEvent, director, RigidBody } from 'cc';
 import { GameManager } from './Manager/GameManager';
 const { ccclass, property } = _decorator;
 
@@ -80,15 +80,19 @@ export class Player extends Component {
             this.id = GameManager.Ins.sumPlayer;
             //console.log(GameManager.Ins.coutPlayer);
             GameManager.Ins.playerList.push(this);
+            console.log(GameManager.Ins.coutPlayer);
+
 
         }
-        
-        if(event.otherCollider.name == 'Cube<BoxCollider>'){
+        //console.log(event.otherCollider.getComponent(RigidBody).group);
+        if(event.otherCollider.getComponent(RigidBody).group == 2){
             this.node.active = false;
             GameManager.Ins.coutPlayer --;
             GameManager.Ins.playerList.splice(this.id-1,1);
-            //console.log(GameManager.Ins.playerList);
+            console.log(GameManager.Ins.coutPlayer);
         }
+
+        
 
         if(event.otherCollider.name == 'End<BoxCollider>'){
             for(let i =0;i<GameManager.Ins.coutPlayer;i++){
@@ -139,7 +143,7 @@ export class Player extends Component {
         }
         if (this.isTouch) {
             this.node.getPosition(this._curPos);
-            this._targetPos.x = this._deltaPos.x * deltaTime/8;
+            this._targetPos.x = this._deltaPos.x * deltaTime;
             //console.log(this._deltaPos.x);
             Vec3.add(this._curPos, this._curPos, this._targetPos);
             this.node.setPosition(this._curPos);

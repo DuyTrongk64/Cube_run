@@ -48,7 +48,7 @@
       "uuid": "858a61b0-8e4a-46aa-8476-eb58208547ba@73b7f",
       "displayName": "",
       "id": "73b7f",
-      "name": "Take 001.animation",
+      "name": "attack.animation",
       "userData": {
         "gltfIndex": 0,
         "wrapMode": 2,
@@ -83,46 +83,6 @@
       ],
       "subMetas": {}
     },
-    "e19fe": {
-      "importer": "gltf-embeded-image",
-      "uuid": "858a61b0-8e4a-46aa-8476-eb58208547ba@e19fe",
-      "displayName": "",
-      "id": "e19fe",
-      "name": "file19.image",
-      "userData": {
-        "gltfIndex": 0,
-        "fixAlphaTransparencyArtifacts": true,
-        "hasAlpha": true,
-        "type": "texture"
-      },
-      "ver": "1.0.3",
-      "imported": true,
-      "files": [
-        ".json",
-        ".png"
-      ],
-      "subMetas": {}
-    },
-    "adacb": {
-      "importer": "gltf-embeded-image",
-      "uuid": "858a61b0-8e4a-46aa-8476-eb58208547ba@adacb",
-      "displayName": "",
-      "id": "adacb",
-      "name": "file2.image",
-      "userData": {
-        "gltfIndex": 1,
-        "fixAlphaTransparencyArtifacts": true,
-        "hasAlpha": true,
-        "type": "texture"
-      },
-      "ver": "1.0.3",
-      "imported": true,
-      "files": [
-        ".json",
-        ".png"
-      ],
-      "subMetas": {}
-    },
     "cafc8": {
       "importer": "texture",
       "uuid": "858a61b0-8e4a-46aa-8476-eb58208547ba@cafc8",
@@ -136,8 +96,8 @@
         "magfilter": "linear",
         "mipfilter": "none",
         "anisotropy": 0,
-        "isUuid": true,
-        "imageUuidOrDatabaseUri": "858a61b0-8e4a-46aa-8476-eb58208547ba@e19fe"
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/Assets/Models/Enemy/number text.png"
       },
       "ver": "1.0.22",
       "imported": true,
@@ -159,8 +119,8 @@
         "magfilter": "linear",
         "mipfilter": "none",
         "anisotropy": 0,
-        "isUuid": true,
-        "imageUuidOrDatabaseUri": "858a61b0-8e4a-46aa-8476-eb58208547ba@adacb"
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/Assets/Models/Enemy/number text.png"
       },
       "ver": "1.0.22",
       "imported": true,
@@ -222,11 +182,11 @@
     "imageMetas": [
       {
         "name": "file19",
-        "uri": "858a61b0-8e4a-46aa-8476-eb58208547ba@e19fe"
+        "uri": "db://assets/Assets/Models/Enemy/number text.png"
       },
       {
         "name": "file2",
-        "uri": "858a61b0-8e4a-46aa-8476-eb58208547ba@adacb"
+        "uri": "db://assets/Assets/Models/Enemy/number text.png"
       }
     ],
     "fbx": {
@@ -240,7 +200,7 @@
         "fps": 30,
         "splits": [
           {
-            "name": "Take 001",
+            "name": "attack",
             "from": 0,
             "to": 0.9583333134651184,
             "wrapMode": 2,

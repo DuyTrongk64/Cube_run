@@ -175,7 +175,7 @@
         "mipfilter": "none",
         "anisotropy": 0,
         "isUuid": true,
-        "imageUuidOrDatabaseUri": "c21615ec-317c-43d7-9325-b14af805cf7e@d5e81"
+        "imageUuidOrDatabaseUri": "37fecd92-4569-41a5-9049-8b85b0c09689"
       },
       "ver": "1.0.22",
       "imported": true,
@@ -198,7 +198,7 @@
         "mipfilter": "none",
         "anisotropy": 0,
         "isUuid": true,
-        "imageUuidOrDatabaseUri": "c21615ec-317c-43d7-9325-b14af805cf7e@49010"
+        "imageUuidOrDatabaseUri": "37fecd92-4569-41a5-9049-8b85b0c09689"
       },
       "ver": "1.0.22",
       "imported": true,
@@ -221,57 +221,9 @@
         "mipfilter": "none",
         "anisotropy": 0,
         "isUuid": true,
-        "imageUuidOrDatabaseUri": "c21615ec-317c-43d7-9325-b14af805cf7e@612f0"
+        "imageUuidOrDatabaseUri": "a952613b-f741-405f-aa2a-a7b368562290@612f0"
       },
       "ver": "1.0.22",
-      "imported": true,
-      "files": [
-        ".json"
-      ],
-      "subMetas": {}
-    },
-    "1f51c": {
-      "importer": "gltf-material",
-      "uuid": "c21615ec-317c-43d7-9325-b14af805cf7e@1f51c",
-      "displayName": "",
-      "id": "1f51c",
-      "name": "text_char7.material",
-      "userData": {
-        "gltfIndex": 0
-      },
-      "ver": "1.0.14",
-      "imported": true,
-      "files": [
-        ".json"
-      ],
-      "subMetas": {}
-    },
-    "56b8b": {
-      "importer": "gltf-material",
-      "uuid": "c21615ec-317c-43d7-9325-b14af805cf7e@56b8b",
-      "displayName": "",
-      "id": "56b8b",
-      "name": "text_char8.material",
-      "userData": {
-        "gltfIndex": 1
-      },
-      "ver": "1.0.14",
-      "imported": true,
-      "files": [
-        ".json"
-      ],
-      "subMetas": {}
-    },
-    "f88c8": {
-      "importer": "gltf-material",
-      "uuid": "c21615ec-317c-43d7-9325-b14af805cf7e@f88c8",
-      "displayName": "",
-      "id": "f88c8",
-      "name": "text_char2.material",
-      "userData": {
-        "gltfIndex": 2
-      },
-      "ver": "1.0.14",
       "imported": true,
       "files": [
         ".json"
@@ -299,14 +251,17 @@
     "imageMetas": [
       {
         "name": "file9",
+        "remap": "37fecd92-4569-41a5-9049-8b85b0c09689",
         "uri": "c21615ec-317c-43d7-9325-b14af805cf7e@d5e81"
       },
       {
         "name": "file10",
+        "remap": "37fecd92-4569-41a5-9049-8b85b0c09689",
         "uri": "c21615ec-317c-43d7-9325-b14af805cf7e@49010"
       },
       {
         "name": "file4",
+        "remap": "a952613b-f741-405f-aa2a-a7b368562290@612f0",
         "uri": "c21615ec-317c-43d7-9325-b14af805cf7e@612f0"
       }
     ],
@@ -346,9 +301,9 @@
         "c21615ec-317c-43d7-9325-b14af805cf7e@91dcf"
       ],
       "materials": [
-        "c21615ec-317c-43d7-9325-b14af805cf7e@1f51c",
-        "c21615ec-317c-43d7-9325-b14af805cf7e@56b8b",
-        "c21615ec-317c-43d7-9325-b14af805cf7e@f88c8"
+        "b4ba073f-b1f8-49e5-b0a8-74720e4af59c",
+        "f9b65ca6-5b2f-4c5b-9e36-a7934f41ca67",
+        "07a17dcb-5269-4c1b-a730-5814234ecc94"
       ],
       "scenes": [
         "c21615ec-317c-43d7-9325-b14af805cf7e@5f904"
@@ -371,6 +326,8 @@
           "faceCount": 0.1
         }
       ]
-    }
+    },
+    "dumpMaterials": true,
+    "materialDumpDir": "db://assets/Assets/Models/Player/cube3a/Materials_idle"
   }
 }

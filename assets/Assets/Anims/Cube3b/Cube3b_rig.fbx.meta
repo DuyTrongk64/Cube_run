@@ -1,0 +1,250 @@
+{
+  "ver": "2.3.8",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "3bf13c5a-0d97-48b9-8a24-c246fbc9f232",
+  "files": [],
+  "subMetas": {
+    "d4e8c": {
+      "importer": "gltf-mesh",
+      "uuid": "3bf13c5a-0d97-48b9-8a24-c246fbc9f232@d4e8c",
+      "displayName": "",
+      "id": "d4e8c",
+      "name": "wp_cap6c.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "triangleCount": 648
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "3988d": {
+      "importer": "gltf-mesh",
+      "uuid": "3bf13c5a-0d97-48b9-8a24-c246fbc9f232@3988d",
+      "displayName": "",
+      "id": "3988d",
+      "name": "cube3.mesh",
+      "userData": {
+        "gltfIndex": 1,
+        "triangleCount": 2372
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "438fe": {
+      "importer": "gltf-skeleton",
+      "uuid": "3bf13c5a-0d97-48b9-8a24-c246fbc9f232@438fe",
+      "displayName": "",
+      "id": "438fe",
+      "name": "UnnamedSkeleton.skeleton",
+      "userData": {
+        "gltfIndex": 0,
+        "jointsLength": 21
+      },
+      "ver": "1.0.1",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "1792b": {
+      "importer": "gltf-embeded-image",
+      "uuid": "3bf13c5a-0d97-48b9-8a24-c246fbc9f232@1792b",
+      "displayName": "",
+      "id": "1792b",
+      "name": "file7.image",
+      "userData": {
+        "gltfIndex": 0,
+        "fixAlphaTransparencyArtifacts": true,
+        "hasAlpha": true,
+        "type": "texture"
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".json",
+        ".png"
+      ],
+      "subMetas": {}
+    },
+    "612f0": {
+      "importer": "gltf-embeded-image",
+      "uuid": "3bf13c5a-0d97-48b9-8a24-c246fbc9f232@612f0",
+      "displayName": "",
+      "id": "612f0",
+      "name": "file4.image",
+      "userData": {
+        "gltfIndex": 1,
+        "fixAlphaTransparencyArtifacts": true,
+        "hasAlpha": true,
+        "type": "texture"
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".json",
+        ".png"
+      ],
+      "subMetas": {}
+    },
+    "957bc": {
+      "importer": "texture",
+      "uuid": "3bf13c5a-0d97-48b9-8a24-c246fbc9f232@957bc",
+      "displayName": "",
+      "id": "957bc",
+      "name": "file7.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "3bf13c5a-0d97-48b9-8a24-c246fbc9f232@1792b"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "91dcf": {
+      "importer": "texture",
+      "uuid": "3bf13c5a-0d97-48b9-8a24-c246fbc9f232@91dcf",
+      "displayName": "",
+      "id": "91dcf",
+      "name": "file4.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "3bf13c5a-0d97-48b9-8a24-c246fbc9f232@612f0"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "cf133": {
+      "importer": "gltf-material",
+      "uuid": "3bf13c5a-0d97-48b9-8a24-c246fbc9f232@cf133",
+      "displayName": "",
+      "id": "cf133",
+      "name": "text_char5.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "f88c8": {
+      "importer": "gltf-material",
+      "uuid": "3bf13c5a-0d97-48b9-8a24-c246fbc9f232@f88c8",
+      "displayName": "",
+      "id": "f88c8",
+      "name": "text_char2.material",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "442e4": {
+      "importer": "gltf-scene",
+      "uuid": "3bf13c5a-0d97-48b9-8a24-c246fbc9f232@442e4",
+      "displayName": "",
+      "id": "442e4",
+      "name": "Cube3b_rig.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "file7",
+        "uri": "3bf13c5a-0d97-48b9-8a24-c246fbc9f232@1792b"
+      },
+      {
+        "name": "file4",
+        "uri": "3bf13c5a-0d97-48b9-8a24-c246fbc9f232@612f0"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "redirect": "3bf13c5a-0d97-48b9-8a24-c246fbc9f232@442e4",
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    },
+    "assetFinder": {
+      "meshes": [
+        "3bf13c5a-0d97-48b9-8a24-c246fbc9f232@d4e8c",
+        "3bf13c5a-0d97-48b9-8a24-c246fbc9f232@3988d"
+      ],
+      "skeletons": [
+        "3bf13c5a-0d97-48b9-8a24-c246fbc9f232@438fe"
+      ],
+      "textures": [
+        "3bf13c5a-0d97-48b9-8a24-c246fbc9f232@957bc",
+        "3bf13c5a-0d97-48b9-8a24-c246fbc9f232@91dcf"
+      ],
+      "materials": [
+        "3bf13c5a-0d97-48b9-8a24-c246fbc9f232@cf133",
+        "3bf13c5a-0d97-48b9-8a24-c246fbc9f232@f88c8"
+      ],
+      "scenes": [
+        "3bf13c5a-0d97-48b9-8a24-c246fbc9f232@442e4"
+      ]
+    }
+  }
+}
