@@ -103,6 +103,9 @@ export class Player extends Component {
 
             }
 
+            GameManager.Ins.endRun = true;
+            
+
         }
     }
 
