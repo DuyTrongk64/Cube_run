@@ -33,9 +33,9 @@ export class Player extends Component {
     
     onLoad() {
         //set up move object
-        input.on(Input.EventType.TOUCH_START, this.onTouchBegan, this);
-        input.on(Input.EventType.TOUCH_MOVE, this.onTouchMoved, this);
-        input.on(Input.EventType.TOUCH_END, this.onTouchEnd, this);
+        // input.on(Input.EventType.TOUCH_START, this.onTouchBegan, this);
+        // input.on(Input.EventType.TOUCH_MOVE, this.onTouchMoved, this);
+        // input.on(Input.EventType.TOUCH_END, this.onTouchEnd, this);
 
 
         // Xử lý sự kiện va chạm
@@ -104,7 +104,7 @@ export class Player extends Component {
             }
 
             GameManager.Ins.endRun = true;
-            
+
 
         }
     }
