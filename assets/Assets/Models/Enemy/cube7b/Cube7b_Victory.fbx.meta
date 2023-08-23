@@ -37,8 +37,8 @@
         "magfilter": "linear",
         "mipfilter": "none",
         "anisotropy": 0,
-        "isUuid": true,
-        "imageUuidOrDatabaseUri": "c3a5f7b1-184b-4dd3-bd2b-1078ccf07937@7155b"
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/Assets/Models/Enemy/number text.png"
       },
       "ver": "1.0.22",
       "imported": true,
@@ -123,46 +123,6 @@
       ],
       "subMetas": {}
     },
-    "7155b": {
-      "importer": "gltf-embeded-image",
-      "uuid": "c3a5f7b1-184b-4dd3-bd2b-1078ccf07937@7155b",
-      "displayName": "",
-      "id": "7155b",
-      "name": "Cube7_rig01:file2.image",
-      "userData": {
-        "gltfIndex": 0,
-        "fixAlphaTransparencyArtifacts": true,
-        "hasAlpha": true,
-        "type": "texture"
-      },
-      "ver": "1.0.3",
-      "imported": true,
-      "files": [
-        ".json",
-        ".png"
-      ],
-      "subMetas": {}
-    },
-    "ab914": {
-      "importer": "gltf-embeded-image",
-      "uuid": "c3a5f7b1-184b-4dd3-bd2b-1078ccf07937@ab914",
-      "displayName": "",
-      "id": "ab914",
-      "name": "wp_cap6c_rig01:file2.image",
-      "userData": {
-        "gltfIndex": 1,
-        "fixAlphaTransparencyArtifacts": true,
-        "hasAlpha": true,
-        "type": "texture"
-      },
-      "ver": "1.0.3",
-      "imported": true,
-      "files": [
-        ".json",
-        ".png"
-      ],
-      "subMetas": {}
-    },
     "69a59": {
       "importer": "texture",
       "uuid": "c3a5f7b1-184b-4dd3-bd2b-1078ccf07937@69a59",
@@ -176,8 +136,8 @@
         "magfilter": "linear",
         "mipfilter": "none",
         "anisotropy": 0,
-        "isUuid": true,
-        "imageUuidOrDatabaseUri": "c3a5f7b1-184b-4dd3-bd2b-1078ccf07937@ab914"
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/Assets/Models/Enemy/number text.png"
       },
       "ver": "1.0.22",
       "imported": true,
@@ -239,11 +199,11 @@
     "imageMetas": [
       {
         "name": "Cube7_rig01:file2",
-        "uri": "c3a5f7b1-184b-4dd3-bd2b-1078ccf07937@7155b"
+        "uri": "db://assets/Assets/Models/Enemy/number text.png"
       },
       {
         "name": "wp_cap6c_rig01:file2",
-        "uri": "c3a5f7b1-184b-4dd3-bd2b-1078ccf07937@ab914"
+        "uri": "db://assets/Assets/Models/Enemy/number text.png"
       }
     ],
     "fbx": {

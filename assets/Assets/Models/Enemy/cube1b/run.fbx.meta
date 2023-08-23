@@ -83,46 +83,6 @@
       ],
       "subMetas": {}
     },
-    "612f0": {
-      "importer": "gltf-embeded-image",
-      "uuid": "4bc01e09-a67a-456f-875f-31f880a5da1b@612f0",
-      "displayName": "",
-      "id": "612f0",
-      "name": "file4.image",
-      "userData": {
-        "gltfIndex": 0,
-        "fixAlphaTransparencyArtifacts": true,
-        "hasAlpha": true,
-        "type": "texture"
-      },
-      "ver": "1.0.3",
-      "imported": true,
-      "files": [
-        ".json",
-        ".png"
-      ],
-      "subMetas": {}
-    },
-    "adacb": {
-      "importer": "gltf-embeded-image",
-      "uuid": "4bc01e09-a67a-456f-875f-31f880a5da1b@adacb",
-      "displayName": "",
-      "id": "adacb",
-      "name": "file2.image",
-      "userData": {
-        "gltfIndex": 1,
-        "fixAlphaTransparencyArtifacts": true,
-        "hasAlpha": true,
-        "type": "texture"
-      },
-      "ver": "1.0.3",
-      "imported": true,
-      "files": [
-        ".json",
-        ".png"
-      ],
-      "subMetas": {}
-    },
     "91dcf": {
       "importer": "texture",
       "uuid": "4bc01e09-a67a-456f-875f-31f880a5da1b@91dcf",
@@ -136,8 +96,8 @@
         "magfilter": "linear",
         "mipfilter": "none",
         "anisotropy": 0,
-        "isUuid": true,
-        "imageUuidOrDatabaseUri": "4bc01e09-a67a-456f-875f-31f880a5da1b@612f0"
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/Assets/Models/Enemy/number text.png"
       },
       "ver": "1.0.22",
       "imported": true,
@@ -159,8 +119,8 @@
         "magfilter": "linear",
         "mipfilter": "none",
         "anisotropy": 0,
-        "isUuid": true,
-        "imageUuidOrDatabaseUri": "4bc01e09-a67a-456f-875f-31f880a5da1b@adacb"
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/Assets/Models/Enemy/number text.png"
       },
       "ver": "1.0.22",
       "imported": true,
@@ -222,11 +182,11 @@
     "imageMetas": [
       {
         "name": "file4",
-        "uri": "4bc01e09-a67a-456f-875f-31f880a5da1b@612f0"
+        "uri": "db://assets/Assets/Models/Enemy/number text.png"
       },
       {
         "name": "file2",
-        "uri": "4bc01e09-a67a-456f-875f-31f880a5da1b@adacb"
+        "uri": "db://assets/Assets/Models/Enemy/number text.png"
       }
     ],
     "fbx": {

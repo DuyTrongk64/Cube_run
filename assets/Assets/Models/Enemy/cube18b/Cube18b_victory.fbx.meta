@@ -136,26 +136,6 @@
       ],
       "subMetas": {}
     },
-    "ef5c9": {
-      "importer": "gltf-embeded-image",
-      "uuid": "7436abeb-baf0-4964-b99f-b0fa875f2d95@ef5c9",
-      "displayName": "",
-      "id": "ef5c9",
-      "name": "Cube18_rig01:wp_cap6c_rig01:file2.image",
-      "userData": {
-        "gltfIndex": 1,
-        "fixAlphaTransparencyArtifacts": true,
-        "hasAlpha": true,
-        "type": "texture"
-      },
-      "ver": "1.0.3",
-      "imported": true,
-      "files": [
-        ".json",
-        ".png"
-      ],
-      "subMetas": {}
-    },
     "dd6b7": {
       "importer": "texture",
       "uuid": "7436abeb-baf0-4964-b99f-b0fa875f2d95@dd6b7",
@@ -192,8 +172,8 @@
         "magfilter": "linear",
         "mipfilter": "none",
         "anisotropy": 0,
-        "isUuid": true,
-        "imageUuidOrDatabaseUri": "7436abeb-baf0-4964-b99f-b0fa875f2d95@ef5c9"
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/Assets/Models/Enemy/number text.png"
       },
       "ver": "1.0.22",
       "imported": true,
@@ -243,7 +223,7 @@
       },
       {
         "name": "Cube18_rig01:wp_cap6c_rig01:file2",
-        "uri": "7436abeb-baf0-4964-b99f-b0fa875f2d95@ef5c9"
+        "uri": "db://assets/Assets/Models/Enemy/number text.png"
       }
     ],
     "fbx": {

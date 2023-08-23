@@ -25,26 +25,6 @@
       ],
       "subMetas": {}
     },
-    "49010": {
-      "importer": "gltf-embeded-image",
-      "uuid": "1081070b-3519-49fd-b77d-81a4c5a427f0@49010",
-      "displayName": "",
-      "id": "49010",
-      "name": "file10.image",
-      "userData": {
-        "gltfIndex": 1,
-        "fixAlphaTransparencyArtifacts": true,
-        "hasAlpha": true,
-        "type": "texture"
-      },
-      "ver": "1.0.3",
-      "imported": true,
-      "files": [
-        ".json",
-        ".png"
-      ],
-      "subMetas": {}
-    },
     "82108": {
       "importer": "gltf-material",
       "uuid": "1081070b-3519-49fd-b77d-81a4c5a427f0@82108",
@@ -175,46 +155,6 @@
       ],
       "subMetas": {}
     },
-    "f6a6d": {
-      "importer": "gltf-embeded-image",
-      "uuid": "1081070b-3519-49fd-b77d-81a4c5a427f0@f6a6d",
-      "displayName": "",
-      "id": "f6a6d",
-      "name": "file11.image",
-      "userData": {
-        "gltfIndex": 2,
-        "fixAlphaTransparencyArtifacts": true,
-        "hasAlpha": true,
-        "type": "texture"
-      },
-      "ver": "1.0.3",
-      "imported": true,
-      "files": [
-        ".json",
-        ".png"
-      ],
-      "subMetas": {}
-    },
-    "19bce": {
-      "importer": "gltf-embeded-image",
-      "uuid": "1081070b-3519-49fd-b77d-81a4c5a427f0@19bce",
-      "displayName": "",
-      "id": "19bce",
-      "name": "file12.image",
-      "userData": {
-        "gltfIndex": 3,
-        "fixAlphaTransparencyArtifacts": true,
-        "hasAlpha": true,
-        "type": "texture"
-      },
-      "ver": "1.0.3",
-      "imported": true,
-      "files": [
-        ".json",
-        ".png"
-      ],
-      "subMetas": {}
-    },
     "583b7": {
       "importer": "texture",
       "uuid": "1081070b-3519-49fd-b77d-81a4c5a427f0@583b7",
@@ -251,8 +191,8 @@
         "magfilter": "linear",
         "mipfilter": "none",
         "anisotropy": 0,
-        "isUuid": true,
-        "imageUuidOrDatabaseUri": "1081070b-3519-49fd-b77d-81a4c5a427f0@49010"
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/Assets/Models/Enemy/number text.png"
       },
       "ver": "1.0.22",
       "imported": true,
@@ -274,8 +214,8 @@
         "magfilter": "linear",
         "mipfilter": "none",
         "anisotropy": 0,
-        "isUuid": true,
-        "imageUuidOrDatabaseUri": "1081070b-3519-49fd-b77d-81a4c5a427f0@f6a6d"
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/Assets/Models/Enemy/number text.png"
       },
       "ver": "1.0.22",
       "imported": true,
@@ -297,8 +237,8 @@
         "magfilter": "linear",
         "mipfilter": "none",
         "anisotropy": 0,
-        "isUuid": true,
-        "imageUuidOrDatabaseUri": "1081070b-3519-49fd-b77d-81a4c5a427f0@19bce"
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/Assets/Models/Enemy/number text.png"
       },
       "ver": "1.0.22",
       "imported": true,
@@ -380,15 +320,15 @@
       },
       {
         "name": "file10",
-        "uri": "1081070b-3519-49fd-b77d-81a4c5a427f0@49010"
+        "uri": "db://assets/Assets/Models/Enemy/number text.png"
       },
       {
         "name": "file11",
-        "uri": "1081070b-3519-49fd-b77d-81a4c5a427f0@f6a6d"
+        "uri": "db://assets/Assets/Models/Enemy/number text.png"
       },
       {
         "name": "file12",
-        "uri": "1081070b-3519-49fd-b77d-81a4c5a427f0@19bce"
+        "uri": "db://assets/Assets/Models/Enemy/number text.png"
       }
     ],
     "fbx": {

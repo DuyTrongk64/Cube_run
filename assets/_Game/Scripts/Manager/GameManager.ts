@@ -50,7 +50,7 @@ export class GameManager extends Component {
         if(this.endRun){
             let curPos = this.camera.node.getPosition();
             curPos.y = 35.697;
-            curPos.z = -185.947;
+            curPos.z = -115.947;
             this.camera.node.setPosition(curPos);
             this.camera.node.setRotationFromEuler(-29.148,0,0);
             this.camera.canMove = false;

@@ -119,26 +119,6 @@
       ],
       "subMetas": {}
     },
-    "19bce": {
-      "importer": "gltf-embeded-image",
-      "uuid": "0ec95edf-eeea-410d-a853-0a1fa842e123@19bce",
-      "displayName": "",
-      "id": "19bce",
-      "name": "file12.image",
-      "userData": {
-        "gltfIndex": 1,
-        "fixAlphaTransparencyArtifacts": true,
-        "hasAlpha": true,
-        "type": "texture"
-      },
-      "ver": "1.0.3",
-      "imported": true,
-      "files": [
-        ".json",
-        ".png"
-      ],
-      "subMetas": {}
-    },
     "583b7": {
       "importer": "texture",
       "uuid": "0ec95edf-eeea-410d-a853-0a1fa842e123@583b7",
@@ -175,8 +155,8 @@
         "magfilter": "linear",
         "mipfilter": "none",
         "anisotropy": 0,
-        "isUuid": true,
-        "imageUuidOrDatabaseUri": "0ec95edf-eeea-410d-a853-0a1fa842e123@19bce"
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/Assets/Models/Enemy/number text.png"
       },
       "ver": "1.0.22",
       "imported": true,
@@ -226,7 +206,7 @@
       },
       {
         "name": "file12",
-        "uri": "0ec95edf-eeea-410d-a853-0a1fa842e123@19bce"
+        "uri": "db://assets/Assets/Models/Enemy/number text.png"
       }
     ],
     "fbx": {

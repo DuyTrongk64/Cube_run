@@ -100,26 +100,6 @@
       ],
       "subMetas": {}
     },
-    "ab914": {
-      "importer": "gltf-embeded-image",
-      "uuid": "ce4df1ce-4a22-4aea-a79a-28555b147e15@ab914",
-      "displayName": "",
-      "id": "ab914",
-      "name": "wp_cap6c_rig01:file2.image",
-      "userData": {
-        "gltfIndex": 0,
-        "fixAlphaTransparencyArtifacts": true,
-        "hasAlpha": true,
-        "type": "texture"
-      },
-      "ver": "1.0.3",
-      "imported": true,
-      "files": [
-        ".json",
-        ".png"
-      ],
-      "subMetas": {}
-    },
     "ceadf": {
       "importer": "gltf-embeded-image",
       "uuid": "ce4df1ce-4a22-4aea-a79a-28555b147e15@ceadf",
@@ -153,8 +133,8 @@
         "magfilter": "linear",
         "mipfilter": "none",
         "anisotropy": 0,
-        "isUuid": true,
-        "imageUuidOrDatabaseUri": "ce4df1ce-4a22-4aea-a79a-28555b147e15@ab914"
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/Assets/Models/Enemy/number text.png"
       },
       "ver": "1.0.22",
       "imported": true,
@@ -239,7 +219,7 @@
     "imageMetas": [
       {
         "name": "wp_cap6c_rig01:file2",
-        "uri": "ce4df1ce-4a22-4aea-a79a-28555b147e15@ab914"
+        "uri": "db://assets/Assets/Models/Enemy/number text.png"
       },
       {
         "name": "Cube13_rig01:file7",
