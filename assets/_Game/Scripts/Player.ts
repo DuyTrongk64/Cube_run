@@ -1,9 +1,10 @@
-import { _decorator, Animation, Node, Camera, Collider, Component, geometry, input, Input, EventTouch, PhysicsSystem, Quat, SystemEvent, tween, UITransform, Vec2, Vec3, BoxCollider, ICollisionEvent, ITriggerEvent, director, RigidBody } from 'cc';
+import { _decorator, Animation, Node, Camera, Collider, Component, geometry, input, Input, EventTouch, PhysicsSystem, Quat, SystemEvent, tween, UITransform, Vec2, Vec3, BoxCollider, ICollisionEvent, ITriggerEvent, director, RigidBody, physics, debug } from 'cc';
 import { GameManager } from './Manager/GameManager';
+
 const { ccclass, property } = _decorator;
 
 @ccclass('Player')
-export class Player extends Component {
+export class Player extends Component  {
 
     @property({ type: Animation })
     anim: Animation | null = null;
@@ -37,7 +38,7 @@ export class Player extends Component {
     readonly cameraCom!: Camera;
 
     @property(Node)
-    public targetNode!: Node
+    public targetNode!: Node;
 
     private _ray: geometry.Ray = new geometry.Ray();
 
@@ -48,9 +49,11 @@ export class Player extends Component {
         input.on(Input.EventType.TOUCH_MOVE, this.onTouchMoved, this);
         input.on(Input.EventType.TOUCH_END, this.onTouchEnd, this);
 
-
+        PhysicsSystem.instance
         // Xử lý sự kiện va chạm
         let collider = this.node.getComponent(Collider);
+        
+        
         // Listening to 'onCollisionStay' Events
         collider.on('onCollisionEnter', this.onCollision, this);
 
@@ -64,6 +67,7 @@ export class Player extends Component {
         this.isTouch = false;
         this.endRun = false;
         this.targetPlayer = false;
+
         if (this.state == 0) {
             GameManager.Ins.playerList.push(this);
         }
@@ -73,10 +77,6 @@ export class Player extends Component {
         input.off(Input.EventType.TOUCH_START, this.onTouchBegan, this);
         input.off(Input.EventType.TOUCH_MOVE, this.onTouchMoved, this);
         input.off(Input.EventType.TOUCH_END, this.onTouchEnd, this);
-    }
-
-    onStart() {
-
     }
 
     private onCollision(event: ICollisionEvent) {
@@ -191,6 +191,7 @@ export class Player extends Component {
         if (this.targetPlayer && this.endRun) {
             this.node.getPosition(this._curPos);
             this._targetPos.x = this._deltaPos.x * deltaTime;
+            this._targetPos.z = -this._deltaPos.y * deltaTime;
             //console.log(this._deltaPos.x);
             Vec3.add(this._curPos, this._curPos, this._targetPos);
             this.node.setPosition(this._curPos);

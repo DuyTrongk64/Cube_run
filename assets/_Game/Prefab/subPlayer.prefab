@@ -1522,13 +1522,12 @@
     "__prefab": {
       "__id__": 55
     },
+    "poolType": 1,
     "anim": {
       "__id__": 48
     },
     "state": 1,
-    "targetNode": {
-      "__id__": 1
-    },
+    "targetNode": null,
     "_id": ""
   },
   {

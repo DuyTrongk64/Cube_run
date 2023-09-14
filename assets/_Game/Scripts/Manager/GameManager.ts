@@ -1,6 +1,8 @@
-import { _decorator, Component, game, Game, Node } from 'cc';
+import { _decorator, Component, game, Game, Node, Vec3 } from 'cc';
 import { Player } from '../Player';
 import { Camera } from '../Camera';
+import PoolControl from '../newPool/PoolControl';
+
 const { ccclass, property } = _decorator;
 
 @ccclass('GameManager')
@@ -16,6 +18,9 @@ export class GameManager extends Component {
     protected onLoad(): void {
         GameManager.ins = this;
     }
+
+    @property(PoolControl)
+    poolControl: PoolControl = null;
 
     public endRun: boolean;
     public coutPlayer: number;
@@ -39,6 +44,7 @@ export class GameManager extends Component {
     start() {
         this.coutPlayer = 1;
         this.endRun = false;
+        this.spawnPrefab(1, new Vec3(0,0,-30));
     }
 
     update(deltaTime: number) {
@@ -57,7 +63,17 @@ export class GameManager extends Component {
         }
     }
 
-    
+    // Khi bạn muốn spawn prefab
+    spawnPrefab(prefabIndex: number, position: Vec3) {
+        this.poolControl.spawn(prefabIndex, position);
+    }
+
+    // Khi bạn muốn despawn prefab
+    despawnPrefab(prefabIndex: number, targetNode: Node) {
+        this.poolControl.despawn(prefabIndex, targetNode);
+    }
+
+
 }
 
 
