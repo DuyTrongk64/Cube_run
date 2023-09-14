@@ -42,6 +42,9 @@ export class Player extends Component  {
 
     private _ray: geometry.Ray = new geometry.Ray();
 
+    private level: number = 1;
+
+    private isMove: boolean = false;
 
     onLoad() {
         //set up move object
@@ -120,6 +123,17 @@ export class Player extends Component  {
 
 
         }
+
+        if (this.endRun){
+            if(event.otherCollider.getComponent(Player).level == this.level){
+                console.log("test");
+                if(this.isMove = false){
+                    event.otherCollider.getComponent(Player).destroy();
+                    GameManager.Ins.spawnPrefab(1,this.node.getPosition());
+                    this.destroy();
+                }
+            }
+        }
     }
 
     //bat dau an xuong
@@ -146,13 +160,14 @@ export class Player extends Component  {
                     const item = raycastResults[i];
                     if (item.collider.node == this.targetNode) {
                         this.targetPlayer = true;
-
+                        this.isMove = true;
                         console.log('raycast hit the target node !');
                         console.log(this.endRun);
                         break;
                     }
                 }
             }
+
         }
     }
 
@@ -201,9 +216,5 @@ export class Player extends Component  {
     update(deltaTime: number) {
         this.startRun(deltaTime);
         this.movePlayer(deltaTime);
-        // let cur = this.node.getPosition();
-        // if(cur.z < -40){
-        //     console.log(GameManager.Ins.ids);
-        // }
     }
 }
