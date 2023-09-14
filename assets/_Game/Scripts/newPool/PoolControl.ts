@@ -13,7 +13,7 @@ export default class PoolControl extends Component {
     onLoad() {
         for (let i = 0; i < this.prefabList.length; i++) {
             const prefab = this.prefabList[i];
-            SimplePool.preload(prefab, this.par, 5); // Số lượng preload tùy ý
+            SimplePool.preload(prefab,5); // Số lượng preload tùy ý
         }
     }
 

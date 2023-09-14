@@ -3,7 +3,7 @@ import { Node, NodePool, Prefab, Vec3, instantiate } from 'cc';
 export default class SimplePool {
     private static pools: Map<Prefab, NodePool> = new Map();
 
-    static preload(prefab: Prefab, root: Node, amount: number) {
+    static preload(prefab: Prefab, amount: number) {
         if (!this.pools.has(prefab)) {
             this.pools.set(prefab, new NodePool());
         }
@@ -13,7 +13,6 @@ export default class SimplePool {
         for (let i = 0; i < amount; i++) {
             const newNode = instantiate(prefab);
             pool.put(newNode);
-            root.addChild(newNode);
         }
     }
 
