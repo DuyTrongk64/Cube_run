@@ -35,14 +35,11 @@ export class Player extends Component  {
 
     // Specify the camera rendering the target node.
     @property(Camera)
-    readonly cameraCom!: Camera;
-
-    @property(Node)
-    public targetNode!: Node;
+    private cameraCom!: Camera;
 
     private _ray: geometry.Ray = new geometry.Ray();
 
-    private level: number = 1;
+    protected level: number = 1;
 
     private isMove: boolean = false;
 
@@ -70,8 +67,8 @@ export class Player extends Component  {
         this.isTouch = false;
         this.endRun = false;
         this.targetPlayer = false;
-
-        if (this.state == 0) {
+        this.cameraCom = this.node.parent.getChildByName("Main Camera").getComponent(Camera);
+        if (this.state === 0) {
             GameManager.Ins.playerList.push(this);
         }
     }
@@ -97,6 +94,7 @@ export class Player extends Component  {
             //console.log(GameManager.Ins.coutPlayer);
             GameManager.Ins.playerList.push(this);
             console.log(GameManager.Ins.coutPlayer);
+            console.log(`player list: ${GameManager.Ins.playerList.length}`)
 
 
         }
@@ -112,11 +110,13 @@ export class Player extends Component  {
 
         if (event.otherCollider.name == 'End<BoxCollider>') {
             for (let i = 0; i < GameManager.Ins.coutPlayer; i++) {
-                GameManager.Ins.playerList[i].node.setPosition(GameManager.Ins.player_field[i].getWorldPosition());
-                GameManager.Ins.playerList[i].canMove = false;
-                GameManager.Ins.playerList[i].anim.play('idle');
-                GameManager.Ins.playerList[i].node.setRotation(new Quat(0, 0, 0, 0));
-                GameManager.Ins.playerList[i].endRun = true;
+                console.log(`${GameManager.Ins.playerList.length}`)
+                // GameManager.Ins.playerList[i].node.setPosition(GameManager.Ins.player_field[i].getWorldPosition());
+                // GameManager.Ins.playerList[i].canMove = false;
+                // GameManager.Ins.playerList[i].anim.play('idle');
+                // GameManager.Ins.playerList[i].node.setRotation(new Quat(0, 0, 0, 0));
+                // GameManager.Ins.playerList[i].endRun = true;
+                
             }
 
             GameManager.Ins.endRun = true;
@@ -124,16 +124,16 @@ export class Player extends Component  {
 
         }
 
-        if (this.endRun){
-            if(event.otherCollider.getComponent(Player).level == this.level){
-                console.log("test");
-                if(this.isMove = false){
-                    event.otherCollider.getComponent(Player).destroy();
-                    GameManager.Ins.spawnPrefab(1,this.node.getPosition());
-                    this.destroy();
-                }
-            }
-        }
+        // if (this.endRun){
+        //     if(event.otherCollider.getComponent(Player).level == this.level){
+        //         console.log("test");
+        //         if(this.isMove = false){
+        //             event.otherCollider.getComponent(Player).destroy();
+        //             GameManager.Ins.spawnPrefab(1,this.node.getPosition());
+        //             this.destroy();
+        //         }
+        //     }
+        // }
     }
 
     //bat dau an xuong
@@ -152,13 +152,13 @@ export class Player extends Component  {
 
         if (this.endRun) {
             const touch = event.touch!;
-
+            //chuyển điểm từ world point sang màn hình
             this.cameraCom.screenPointToRay(touch.getLocationX(), touch.getLocationY(), this._ray);
             if (PhysicsSystem.instance.raycast(this._ray)) {
                 const raycastResults = PhysicsSystem.instance.raycastResults;
                 for (let i = 0; i < raycastResults.length; i++) {
                     const item = raycastResults[i];
-                    if (item.collider.node == this.targetNode) {
+                    if (item.collider.node == this.node) {
                         this.targetPlayer = true;
                         this.isMove = true;
                         console.log('raycast hit the target node !');

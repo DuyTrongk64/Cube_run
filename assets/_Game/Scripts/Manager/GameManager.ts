@@ -37,14 +37,14 @@ export class GameManager extends Component {
     public spawn_point: Node[] = [];
 
     @property(Camera)
-    public camera: Camera;
+    public camera!: Camera;
 
     public playerList: Array<Player> = [];
 
     start() {
         this.coutPlayer = 1;
         this.endRun = false;
-        this.spawnPrefab(1, new Vec3(0,0,-30));
+        this.spawnPlayer();
     }
 
     update(deltaTime: number) {
@@ -73,7 +73,11 @@ export class GameManager extends Component {
         this.poolControl.despawn(prefabIndex, targetNode);
     }
 
-
+    spawnPlayer(){
+        for(let i =0;i<this.spawn_point.length;i++){
+            this.spawnPrefab(2,this.spawn_point[i].getPosition());
+        }
+    }
 }
 
 

@@ -1485,7 +1485,7 @@
     "__prefab": {
       "__id__": 53
     },
-    "_group": 1,
+    "_group": 8,
     "_type": 4,
     "_mass": 1,
     "_allowSleep": true,
@@ -1522,12 +1522,10 @@
     "__prefab": {
       "__id__": 55
     },
-    "poolType": 1,
     "anim": {
       "__id__": 48
     },
     "state": 1,
-    "targetNode": null,
     "_id": ""
   },
   {
