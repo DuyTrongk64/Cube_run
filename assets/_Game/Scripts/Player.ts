@@ -1,4 +1,4 @@
-import { _decorator, Animation, Node, Camera, Collider, Component, geometry, input, Input, EventTouch, PhysicsSystem, Quat, SystemEvent, tween, UITransform, Vec2, Vec3, BoxCollider, ICollisionEvent, ITriggerEvent, director, RigidBody, physics, debug } from 'cc';
+import { _decorator, Animation, Node, Camera, Collider, Component, geometry, input, Input, EventTouch, PhysicsSystem, Quat, SystemEvent, tween, UITransform, Vec2, Vec3, BoxCollider, ICollisionEvent, ITriggerEvent, director, RigidBody, physics, debug, CameraComponent, find } from 'cc';
 import { GameManager } from './Manager/GameManager';
 
 const { ccclass, property } = _decorator;
@@ -61,16 +61,17 @@ export class Player extends Component  {
 
 
     start() {
+        if (this.state === 0) {
+            GameManager.Ins.playerList.push(this);
+        }
         this.hp = 5;
         this.speed = 10;
         this.canMove = false;
         this.isTouch = false;
         this.endRun = false;
         this.targetPlayer = false;
-        this.cameraCom = this.node.parent.getChildByName("Main Camera").getComponent(Camera);
-        if (this.state === 0) {
-            GameManager.Ins.playerList.push(this);
-        }
+        this.cameraCom = find("Main Camera").getComponent(Camera);
+        
     }
 
     onDestroy() {
@@ -111,11 +112,11 @@ export class Player extends Component  {
         if (event.otherCollider.name == 'End<BoxCollider>') {
             for (let i = 0; i < GameManager.Ins.coutPlayer; i++) {
                 console.log(`${GameManager.Ins.playerList.length}`)
-                // GameManager.Ins.playerList[i].node.setPosition(GameManager.Ins.player_field[i].getWorldPosition());
-                // GameManager.Ins.playerList[i].canMove = false;
-                // GameManager.Ins.playerList[i].anim.play('idle');
-                // GameManager.Ins.playerList[i].node.setRotation(new Quat(0, 0, 0, 0));
-                // GameManager.Ins.playerList[i].endRun = true;
+                GameManager.Ins.playerList[i].node.setPosition(GameManager.Ins.player_field[i].getWorldPosition());
+                GameManager.Ins.playerList[i].canMove = false;
+                GameManager.Ins.playerList[i].anim.play('idle');
+                GameManager.Ins.playerList[i].node.setRotation(new Quat(0, 0, 0, 0));
+                GameManager.Ins.playerList[i].endRun = true;
                 
             }
 
