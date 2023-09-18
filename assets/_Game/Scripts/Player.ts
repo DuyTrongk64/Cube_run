@@ -4,7 +4,7 @@ import { GameManager } from './Manager/GameManager';
 const { ccclass, property } = _decorator;
 
 @ccclass('Player')
-export class Player extends Component  {
+export class Player extends Component {
 
     @property({ type: Animation })
     anim: Animation | null = null;
@@ -39,7 +39,14 @@ export class Player extends Component  {
 
     private _ray: geometry.Ray = new geometry.Ray();
 
-    protected level: number = 1;
+    private _level: number = 1;
+
+    public get level(): number {
+        return this._level;
+    }
+    public set level(value: number) {
+        this._level = value;
+    }
 
     private isMove: boolean = false;
 
@@ -52,8 +59,8 @@ export class Player extends Component  {
         PhysicsSystem.instance
         // Xử lý sự kiện va chạm
         let collider = this.node.getComponent(Collider);
-        
-        
+
+
         // Listening to 'onCollisionStay' Events
         collider.on('onCollisionEnter', this.onCollision, this);
 
@@ -71,7 +78,7 @@ export class Player extends Component  {
         this.endRun = false;
         this.targetPlayer = false;
         this.cameraCom = find("Main Camera").getComponent(Camera);
-        
+
     }
 
     onDestroy() {
@@ -81,7 +88,7 @@ export class Player extends Component  {
     }
 
     private onCollision(event: ICollisionEvent) {
-
+        let otherPlayer = event.otherCollider.getComponent(Player);
         if (this.state == 1) {
             this.canMove = true;
             this.isTouch = true;
@@ -94,8 +101,8 @@ export class Player extends Component  {
             this.id = GameManager.Ins.sumPlayer;
             //console.log(GameManager.Ins.coutPlayer);
             GameManager.Ins.playerList.push(this);
-            console.log(GameManager.Ins.coutPlayer);
-            console.log(`player list: ${GameManager.Ins.playerList.length}`)
+            // console.log(GameManager.Ins.coutPlayer);
+            // console.log(`player list: ${GameManager.Ins.playerList.length}`);
 
 
         }
@@ -104,20 +111,20 @@ export class Player extends Component  {
             this.node.active = false;
             GameManager.Ins.coutPlayer--;
             GameManager.Ins.playerList.splice(this.id - 1, 1);
-            console.log(GameManager.Ins.coutPlayer);
+            //console.log(GameManager.Ins.coutPlayer);
         }
 
 
 
         if (event.otherCollider.name == 'End<BoxCollider>') {
             for (let i = 0; i < GameManager.Ins.coutPlayer; i++) {
-                console.log(`${GameManager.Ins.playerList.length}`)
+                //console.log(`${GameManager.Ins.playerList.length}`)
                 GameManager.Ins.playerList[i].node.setPosition(GameManager.Ins.player_field[i].getWorldPosition());
                 GameManager.Ins.playerList[i].canMove = false;
                 GameManager.Ins.playerList[i].anim.play('idle');
                 GameManager.Ins.playerList[i].node.setRotation(new Quat(0, 0, 0, 0));
                 GameManager.Ins.playerList[i].endRun = true;
-                
+
             }
 
             GameManager.Ins.endRun = true;
@@ -125,16 +132,21 @@ export class Player extends Component  {
 
         }
 
-        // if (this.endRun){
-        //     if(event.otherCollider.getComponent(Player).level == this.level){
-        //         console.log("test");
-        //         if(this.isMove = false){
-        //             event.otherCollider.getComponent(Player).destroy();
-        //             GameManager.Ins.spawnPrefab(1,this.node.getPosition());
-        //             this.destroy();
-        //         }
-        //     }
-        // }
+        if (this.endRun) {
+
+            //console.log(event.otherCollider.getComponent(Player));
+            if (event.otherCollider.getComponent(Player)!=null) {
+                if (event.otherCollider.getComponent(Player).level == this._level) {
+                    console.log("test");
+                    if (this.isMove = false) {
+                        event.otherCollider.getComponent(Player).destroy();
+                        GameManager.Ins.spawnPrefab(1, this.node.getPosition());
+                        this.destroy();
+                    }
+                }
+            }
+
+        }
     }
 
     //bat dau an xuong
@@ -146,7 +158,7 @@ export class Player extends Component  {
             this.isTouch = true;
             this.node.getPosition(this._curPos);
             this.node.setRotation(new Quat(0, 1, 0, 0));
-            console.log(this.endRun);
+            //console.log(this.endRun);
 
             this.anim.play('run');
         }
@@ -162,8 +174,8 @@ export class Player extends Component  {
                     if (item.collider.node == this.node) {
                         this.targetPlayer = true;
                         this.isMove = true;
-                        console.log('raycast hit the target node !');
-                        console.log(this.endRun);
+                        // console.log('raycast hit the target node !');
+                        // console.log(this.endRun);
                         break;
                     }
                 }
@@ -213,6 +225,8 @@ export class Player extends Component  {
             this.node.setPosition(this._curPos);
         }
     }
+
+
 
     update(deltaTime: number) {
         this.startRun(deltaTime);
