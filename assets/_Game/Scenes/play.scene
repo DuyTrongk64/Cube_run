@@ -226,15 +226,15 @@
     "__prefab": null,
     "prefabList": [
       {
-        "__uuid__": "77d20904-2470-4f4a-b30b-e1af61e5fc90",
-        "__expectedType__": "cc.Prefab"
-      },
-      {
-        "__uuid__": "53c58894-5eda-4187-8d4e-7b8f34c851c0",
-        "__expectedType__": "cc.Prefab"
-      },
-      {
         "__uuid__": "669e4976-9791-4983-a3b7-cac94a98d2fc",
+        "__expectedType__": "cc.Prefab"
+      },
+      {
+        "__uuid__": "d18a4c7d-c434-49fa-bb62-326319ca885e",
+        "__expectedType__": "cc.Prefab"
+      },
+      {
+        "__uuid__": "50e08a90-b64b-4ff2-8c12-bc15db6d7041",
         "__expectedType__": "cc.Prefab"
       }
     ],
@@ -820,6 +820,7 @@
     "anim": null,
     "state": 0,
     "cameraCom": null,
+    "level": 1,
     "_id": "8944qUQDtJEKSAV54N7F7k"
   },
   {

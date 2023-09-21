@@ -75,7 +75,7 @@ export class GameManager extends Component {
 
     spawnPlayer(){
         for(let i =0;i<this.spawn_point.length;i++){
-            this.spawnPrefab(2,this.spawn_point[i].getPosition());
+            this.spawnPrefab(0,this.spawn_point[i].getPosition());
         }
     }
 }

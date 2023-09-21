@@ -86,7 +86,7 @@
       "uuid": "c21615ec-317c-43d7-9325-b14af805cf7e@73b7f",
       "displayName": "",
       "id": "73b7f",
-      "name": "Take 001.animation",
+      "name": "idle.animation",
       "userData": {
         "gltfIndex": 0,
         "wrapMode": 2,
@@ -276,7 +276,7 @@
         "fps": 30,
         "splits": [
           {
-            "name": "Take 001",
+            "name": "idle",
             "from": 0,
             "to": 1.25,
             "wrapMode": 2,

@@ -39,16 +39,8 @@ export class Player extends Component {
 
     private _ray: geometry.Ray = new geometry.Ray();
 
-    private _level: number = 1;
-
-    public get level(): number {
-        return this._level;
-    }
-    public set level(value: number) {
-        this._level = value;
-    }
-
-    private isMove: boolean = false;
+    @property
+    public level: number = 1;
 
     onLoad() {
         //set up move object
@@ -63,7 +55,6 @@ export class Player extends Component {
 
         // Listening to 'onCollisionStay' Events
         collider.on('onCollisionEnter', this.onCollision, this);
-
     }
 
 
@@ -71,11 +62,20 @@ export class Player extends Component {
         if (this.state === 0) {
             GameManager.Ins.playerList.push(this);
         }
-        this.hp = 5;
-        this.speed = 10;
-        this.canMove = false;
+        //set up for high level player
+        if(this.level>1){
+            this.endRun = true;
+            this.canMove = false;
+        }
+        else{
+            this.hp = 5;
+            this.speed = 10;
+            this.canMove = false;
+            
+            this.endRun = false;
+            
+        }
         this.isTouch = false;
-        this.endRun = false;
         this.targetPlayer = false;
         this.cameraCom = find("Main Camera").getComponent(Camera);
 
@@ -135,13 +135,16 @@ export class Player extends Component {
         if (this.endRun) {
 
             //console.log(event.otherCollider.getComponent(Player));
-            if (event.otherCollider.getComponent(Player)!=null) {
-                if (event.otherCollider.getComponent(Player).level == this._level) {
-                    console.log("test");
-                    if (this.isMove = false) {
-                        event.otherCollider.getComponent(Player).destroy();
-                        GameManager.Ins.spawnPrefab(1, this.node.getPosition());
+            if (event.otherCollider.getComponent(Player) != null) {
+                if (event.otherCollider.getComponent(Player).level == this.level) {
+                    //console.log("test");
+                    if (this.targetPlayer) {
+                        
+                        GameManager.Ins.despawnPrefab(this.level-1, this.node);
+                        GameManager.Ins.despawnPrefab(this.level-1, event.otherCollider.getComponent(Player).node);
+                        GameManager.Ins.spawnPrefab(this.level, event.otherCollider.getComponent(Player).node.getPosition());
                         this.destroy();
+                        //console.log(this.id);
                     }
                 }
             }
@@ -173,7 +176,7 @@ export class Player extends Component {
                     const item = raycastResults[i];
                     if (item.collider.node == this.node) {
                         this.targetPlayer = true;
-                        this.isMove = true;
+                        console.log(this.id);
                         // console.log('raycast hit the target node !');
                         // console.log(this.endRun);
                         break;
