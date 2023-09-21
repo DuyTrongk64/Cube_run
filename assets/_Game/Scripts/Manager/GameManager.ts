@@ -1,6 +1,6 @@
-import { _decorator, Component, game, Game, Node, Vec3 } from 'cc';
+import { _decorator, Camera, Component, game, Game, Node, Vec3 } from 'cc';
 import { Player } from '../Player';
-import { Camera } from '../Camera';
+import { Camera3d } from '../Camera3d';
 import PoolControl from '../newPool/PoolControl';
 
 const { ccclass, property } = _decorator;
@@ -37,7 +37,10 @@ export class GameManager extends Component {
     public spawn_point: Node[] = [];
 
     @property(Camera)
-    public camera!: Camera;
+    public camera3d!: Camera3d;
+
+    @property(Camera)
+    public camera2d!: Camera;
 
     public playerList: Array<Player> = [];
 
@@ -45,6 +48,7 @@ export class GameManager extends Component {
         this.coutPlayer = 1;
         this.endRun = false;
         this.spawnPlayer();
+        this.camera2d.enabled = false;
     }
 
     update(deltaTime: number) {
@@ -54,12 +58,14 @@ export class GameManager extends Component {
         }
 
         if(this.endRun){
-            let curPos = this.camera.node.getPosition();
+            let curPos = this.camera3d.node.getPosition();
             curPos.y = 35.697;
             curPos.z = -115.947;
-            this.camera.node.setPosition(curPos);
-            this.camera.node.setRotationFromEuler(-29.148,0,0);
-            this.camera.canMove = false;
+            this.camera3d.node.setPosition(curPos);
+            this.camera3d.node.setRotationFromEuler(-29.148,0,0);
+            this.camera3d.canMove = false;
+            this.camera2d.enabled = true;
+            
         }
     }
 
@@ -78,6 +84,8 @@ export class GameManager extends Component {
             this.spawnPrefab(0,this.spawn_point[i].getPosition());
         }
     }
+
+
 }
 
 

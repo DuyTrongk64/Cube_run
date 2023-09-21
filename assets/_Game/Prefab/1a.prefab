@@ -1424,6 +1424,18 @@
       {
         "__uuid__": "bc14c618-59d8-49ed-acbd-c009e7ba3ec9@98912",
         "__expectedType__": "cc.AnimationClip"
+      },
+      {
+        "__uuid__": "903b98b2-e847-46cc-ada2-9330a5728802@73b7f",
+        "__expectedType__": "cc.AnimationClip"
+      },
+      {
+        "__uuid__": "f3255e19-19cc-4abd-9309-7ce298cb09e5@73b7f",
+        "__expectedType__": "cc.AnimationClip"
+      },
+      {
+        "__uuid__": "b9b4f19d-0311-4c4d-99ee-0896d5cb7de3@73b7f",
+        "__expectedType__": "cc.AnimationClip"
       }
     ],
     "_defaultClip": {
@@ -1526,6 +1538,7 @@
       "__id__": 48
     },
     "state": 1,
+    "level": 1,
     "_id": ""
   },
   {

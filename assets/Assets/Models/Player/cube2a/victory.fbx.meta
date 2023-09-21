@@ -82,7 +82,7 @@
       "uuid": "0a53ade2-4688-4ecc-9453-83c419a8615e@73b7f",
       "displayName": "",
       "id": "73b7f",
-      "name": "Take 001.animation",
+      "name": "victory.animation",
       "userData": {
         "gltfIndex": 0,
         "wrapMode": 2,
@@ -321,7 +321,7 @@
         "fps": 30,
         "splits": [
           {
-            "name": "Take 001",
+            "name": "victory",
             "from": 0,
             "to": 1.4583333730697632,
             "wrapMode": 2,

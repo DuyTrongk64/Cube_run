@@ -2021,6 +2021,18 @@
       {
         "__uuid__": "08742491-2db3-41bf-bd2f-2835cbd9f7b2@73b7f",
         "__expectedType__": "cc.AnimationClip"
+      },
+      {
+        "__uuid__": "48a748c0-8dfa-42df-ae1a-07916e07b8a6@73b7f",
+        "__expectedType__": "cc.AnimationClip"
+      },
+      {
+        "__uuid__": "c87cdf91-65a6-4caa-b703-afa55ad207cf@73b7f",
+        "__expectedType__": "cc.AnimationClip"
+      },
+      {
+        "__uuid__": "0a53ade2-4688-4ecc-9453-83c419a8615e@73b7f",
+        "__expectedType__": "cc.AnimationClip"
       }
     ],
     "_defaultClip": {

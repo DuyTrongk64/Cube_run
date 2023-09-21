@@ -82,7 +82,7 @@
       "uuid": "f3255e19-19cc-4abd-9309-7ce298cb09e5@73b7f",
       "displayName": "",
       "id": "73b7f",
-      "name": "Take 001.animation",
+      "name": "atk.animation",
       "userData": {
         "gltfIndex": 0,
         "wrapMode": 2,
@@ -261,7 +261,7 @@
         "fps": 30,
         "splits": [
           {
-            "name": "Take 001",
+            "name": "atk",
             "from": 0,
             "to": 1.125,
             "wrapMode": 2,

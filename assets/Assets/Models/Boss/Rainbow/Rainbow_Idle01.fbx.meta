@@ -1,0 +1,207 @@
+{
+  "ver": "2.3.8",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "57b24456-109e-4a6e-b8f8-2ec3a34a6a2d",
+  "files": [
+    "__original-animation-0.cconb"
+  ],
+  "subMetas": {
+    "77671": {
+      "importer": "gltf-scene",
+      "uuid": "57b24456-109e-4a6e-b8f8-2ec3a34a6a2d@77671",
+      "displayName": "",
+      "id": "77671",
+      "name": "Rainbow_Idle01.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "e00e9": {
+      "importer": "gltf-mesh",
+      "uuid": "57b24456-109e-4a6e-b8f8-2ec3a34a6a2d@e00e9",
+      "displayName": "",
+      "id": "e00e9",
+      "name": "boss_rainbow.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "triangleCount": 3052
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "18d6f": {
+      "importer": "gltf-animation",
+      "uuid": "57b24456-109e-4a6e-b8f8-2ec3a34a6a2d@18d6f",
+      "displayName": "",
+      "id": "18d6f",
+      "name": "mixamo.com.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 0.9583333134651184
+        },
+        "events": []
+      },
+      "ver": "1.0.17",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "438fe": {
+      "importer": "gltf-skeleton",
+      "uuid": "57b24456-109e-4a6e-b8f8-2ec3a34a6a2d@438fe",
+      "displayName": "",
+      "id": "438fe",
+      "name": "UnnamedSkeleton.skeleton",
+      "userData": {
+        "gltfIndex": 0,
+        "jointsLength": 20
+      },
+      "ver": "1.0.1",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "adacb": {
+      "importer": "gltf-embeded-image",
+      "uuid": "57b24456-109e-4a6e-b8f8-2ec3a34a6a2d@adacb",
+      "displayName": "",
+      "id": "adacb",
+      "name": "file2.image",
+      "userData": {
+        "gltfIndex": 0,
+        "fixAlphaTransparencyArtifacts": true,
+        "hasAlpha": true,
+        "type": "texture"
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".json",
+        ".png"
+      ],
+      "subMetas": {}
+    },
+    "e873a": {
+      "importer": "texture",
+      "uuid": "57b24456-109e-4a6e-b8f8-2ec3a34a6a2d@e873a",
+      "displayName": "",
+      "id": "e873a",
+      "name": "file2.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "57b24456-109e-4a6e-b8f8-2ec3a34a6a2d@adacb"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "b8e94": {
+      "importer": "gltf-material",
+      "uuid": "57b24456-109e-4a6e-b8f8-2ec3a34a6a2d@b8e94",
+      "displayName": "",
+      "id": "b8e94",
+      "name": "text_char.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "file2",
+        "uri": "57b24456-109e-4a6e-b8f8-2ec3a34a6a2d@adacb"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "animationImportSettings": [
+      {
+        "name": "mixamo.com",
+        "duration": 0.9583333134651184,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "mixamo.com",
+            "from": 0,
+            "to": 0.9583333134651184,
+            "wrapMode": 2,
+            "previousId": "18d6f"
+          }
+        ]
+      }
+    ],
+    "redirect": "57b24456-109e-4a6e-b8f8-2ec3a34a6a2d@77671",
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    },
+    "assetFinder": {
+      "meshes": [
+        "57b24456-109e-4a6e-b8f8-2ec3a34a6a2d@e00e9"
+      ],
+      "skeletons": [
+        "57b24456-109e-4a6e-b8f8-2ec3a34a6a2d@438fe"
+      ],
+      "textures": [
+        "57b24456-109e-4a6e-b8f8-2ec3a34a6a2d@e873a"
+      ],
+      "materials": [
+        "57b24456-109e-4a6e-b8f8-2ec3a34a6a2d@b8e94"
+      ],
+      "scenes": [
+        "57b24456-109e-4a6e-b8f8-2ec3a34a6a2d@77671"
+      ]
+    }
+  }
+}

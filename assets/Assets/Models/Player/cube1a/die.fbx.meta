@@ -66,7 +66,7 @@
       "uuid": "43fbed54-759d-4ed7-9c23-61a279b5b398@73b7f",
       "displayName": "",
       "id": "73b7f",
-      "name": "Take 001.animation",
+      "name": "die.animation",
       "userData": {
         "gltfIndex": 0,
         "wrapMode": 2,
@@ -261,7 +261,7 @@
         "fps": 30,
         "splits": [
           {
-            "name": "Take 001",
+            "name": "die",
             "from": 0,
             "to": 1.0833333730697632,
             "wrapMode": 2,
