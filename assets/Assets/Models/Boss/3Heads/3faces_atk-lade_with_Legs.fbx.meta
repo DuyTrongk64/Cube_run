@@ -388,7 +388,7 @@
       "uuid": "36095cc8-d85d-4a4c-9a73-52433f35f282@17eb7",
       "displayName": "",
       "id": "17eb7",
-      "name": "atk-lade.animation",
+      "name": "atkLade.animation",
       "userData": {
         "gltfIndex": 0,
         "wrapMode": 2,
@@ -1007,7 +1007,7 @@
         "fps": 30,
         "splits": [
           {
-            "name": "atk-lade",
+            "name": "atkLade",
             "from": 0,
             "to": 0.6666666865348816,
             "wrapMode": 2,
@@ -1087,14 +1087,14 @@
         "36095cc8-d85d-4a4c-9a73-52433f35f282@0039b"
       ],
       "materials": [
-        "166cb736-15dc-4a85-a089-ea3706517685",
-        "62d288fb-cbeb-4689-8863-24fe948d7e08",
-        "b0696e96-8028-42ee-b705-f690351f40a0",
-        "4235c33c-89da-4580-90f1-85f447718907",
-        "81d38fbc-525c-4ba5-b37a-4ec81e354397",
-        "ac6878e8-e7a2-493f-b4c2-53d5ac43a1bb",
-        "1437ae54-c9ec-43ed-ac23-c0a2e6a960a4",
-        "996d9cae-ec0d-472d-b905-cb6566ca4064"
+        "0c73c1b4-ac5f-4eae-a1d6-5d21caccea5a",
+        "f8eb0d5a-d14b-4285-879f-7b295fff37e5",
+        "a20d5507-93bb-4121-89ce-1c8ab6304f16",
+        "b0229edc-9cd5-4973-ab3a-95871dd7840c",
+        "6c304c34-4693-4586-9c17-5c0b12c19cba",
+        "c929ec72-531c-4ded-9b9f-a3ec6d3c3280",
+        "5acd5955-1ce7-4e6b-9bac-2be29ca3656f",
+        "165c05fb-5001-4c5f-8acf-929d5d7eb390"
       ],
       "scenes": [
         "36095cc8-d85d-4a4c-9a73-52433f35f282@ee925"

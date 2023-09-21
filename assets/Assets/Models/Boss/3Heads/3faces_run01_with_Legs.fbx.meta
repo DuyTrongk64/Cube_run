@@ -422,7 +422,7 @@
       "uuid": "b12140a3-0774-4c51-adbd-7d6c1a319086@9292d",
       "displayName": "",
       "id": "9292d",
-      "name": "Run.animation",
+      "name": "run.animation",
       "userData": {
         "gltfIndex": 0,
         "wrapMode": 2,
@@ -1233,7 +1233,7 @@
         "fps": 30,
         "splits": [
           {
-            "name": "Run",
+            "name": "run",
             "from": 0,
             "to": 6,
             "wrapMode": 2,

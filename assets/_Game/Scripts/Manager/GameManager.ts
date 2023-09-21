@@ -85,7 +85,10 @@ export class GameManager extends Component {
         }
     }
 
-
+    spawnBoss(id: number){
+        GameManager.Ins.camera2d.enabled = false;
+        this.poolControl.spawn(id,new Vec3(0,1.019,-180));
+    }
 }
 
 

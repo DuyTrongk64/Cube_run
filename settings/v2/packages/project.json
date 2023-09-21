@@ -21,13 +21,18 @@
       {
         "index": 3,
         "name": "Player Body"
+      },
+      {
+        "index": 4,
+        "name": "Enemies Body"
       }
     ],
     "collisionMatrix": {
       "0": 11,
       "1": 9,
-      "2": 8,
-      "3": 15
+      "2": 24,
+      "3": 15,
+      "4": 4
     },
     "allowSleep": false
   }

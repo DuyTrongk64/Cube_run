@@ -88,6 +88,7 @@ export class Player extends Component {
     }
 
     private onCollision(event: ICollisionEvent) {
+
         let otherPlayer = event.otherCollider.getComponent(Player);
         if (this.state == 1) {
             this.canMove = true;
@@ -128,7 +129,7 @@ export class Player extends Component {
             }
 
             GameManager.Ins.endRun = true;
-
+            GameManager.Ins.camera2d.enabled = true;
 
         }
 
