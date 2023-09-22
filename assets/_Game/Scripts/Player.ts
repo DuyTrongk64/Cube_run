@@ -1,4 +1,4 @@
-import { _decorator, Animation, Node, Camera, Collider, Component, geometry, input, Input, EventTouch, PhysicsSystem, Quat, SystemEvent, tween, UITransform, Vec2, Vec3, BoxCollider, ICollisionEvent, ITriggerEvent, director, RigidBody, physics, debug, CameraComponent, find } from 'cc';
+import { _decorator, Animation, Node, Camera, Collider, Component, geometry, input, Input, EventTouch, PhysicsSystem, Quat, SystemEvent, tween, UITransform, Vec2, Vec3, BoxCollider, ICollisionEvent, ITriggerEvent, director, RigidBody, physics, debug, CameraComponent, find, game } from 'cc';
 import { GameManager } from './Manager/GameManager';
 
 const { ccclass, property } = _decorator;
@@ -20,11 +20,15 @@ export class Player extends Component {
 
     private isTouch: boolean;
 
+    private newPlayer: boolean;
+
     private endRun: boolean;
 
     private targetPlayer: boolean;
 
     protected id: number = 1;
+
+    private selectedBoss: boolean;
 
     // current character position
     private _curPos: Vec3 = new Vec3();
@@ -52,9 +56,10 @@ export class Player extends Component {
         // Xử lý sự kiện va chạm
         let collider = this.node.getComponent(Collider);
 
-
         // Listening to 'onCollisionStay' Events
         collider.on('onCollisionEnter', this.onCollision, this);
+
+        game.frameRate = 60;
     }
 
 
@@ -63,22 +68,22 @@ export class Player extends Component {
             GameManager.Ins.playerList.push(this);
         }
         //set up for high level player
-        if(this.level>1){
+        if (this.level > 1) {
             this.endRun = true;
             this.canMove = false;
         }
-        else{
+        else {
             this.hp = 5;
             this.speed = 10;
             this.canMove = false;
-            
+            this.newPlayer = false;
             this.endRun = false;
-            
+
         }
         this.isTouch = false;
         this.targetPlayer = false;
         this.cameraCom = find("Main Camera").getComponent(Camera);
-
+        this.selectedBoss = false;
     }
 
     onDestroy() {
@@ -92,7 +97,7 @@ export class Player extends Component {
         let otherPlayer = event.otherCollider.getComponent(Player);
         if (this.state == 1) {
             this.canMove = true;
-            this.isTouch = true;
+            this.newPlayer = true;
             this.node.getPosition(this._curPos);
             this.node.setRotation(new Quat(0, 1, 0, 0));
             this.state = 0;
@@ -140,12 +145,11 @@ export class Player extends Component {
                 if (event.otherCollider.getComponent(Player).level == this.level) {
                     //console.log("test");
                     if (this.targetPlayer) {
-                        
-                        GameManager.Ins.despawnPrefab(this.level-1, this.node);
-                        GameManager.Ins.despawnPrefab(this.level-1, event.otherCollider.getComponent(Player).node);
+
+                        GameManager.Ins.despawnPrefab(this.level - 1, this.node);
+                        GameManager.Ins.despawnPrefab(this.level - 1, event.otherCollider.getComponent(Player).node);
                         GameManager.Ins.spawnPrefab(this.level, event.otherCollider.getComponent(Player).node.getPosition());
                         this.destroy();
-                        //console.log(this.id);
                     }
                 }
             }
@@ -167,7 +171,7 @@ export class Player extends Component {
             this.anim.play('run');
         }
 
-        if (this.endRun) {
+        if (this.endRun && this.selectedBoss) {
             const touch = event.touch!;
             //chuyển điểm từ world point sang màn hình
             this.cameraCom.screenPointToRay(touch.getLocationX(), touch.getLocationY(), this._ray);
@@ -177,9 +181,10 @@ export class Player extends Component {
                     const item = raycastResults[i];
                     if (item.collider.node == this.node) {
                         this.targetPlayer = true;
-                        console.log(this.id);
-                        // console.log('raycast hit the target node !');
-                        // console.log(this.endRun);
+                        console.log(`id: ${this.id}`);
+                        console.log(`index: ${GameManager.Ins.playerList.indexOf(this)}`);
+                        console.log(`list length: ${GameManager.Ins.playerList.length}`);
+                        console.log("......................")
                         break;
                     }
                 }
@@ -190,12 +195,13 @@ export class Player extends Component {
 
     //di chuyen chuot
     onTouchMoved(event) {
-
         let touches = event.getTouches();
 
         let touch1 = touches[0];
         this._deltaPos = touch1.getDelta();
-
+        if (this.newPlayer) {
+            this.isTouch = true;
+        }
     }
 
     onTouchEnd(event) {
@@ -210,7 +216,7 @@ export class Player extends Component {
             this.node.setPosition(curPos);
 
         }
-        if (this.isTouch) {
+        if (this.isTouch && !this.endRun) {
             this.node.getPosition(this._curPos);
             this._targetPos.x = this._deltaPos.x * deltaTime;
             //console.log(this._deltaPos.x);
@@ -228,6 +234,7 @@ export class Player extends Component {
             Vec3.add(this._curPos, this._curPos, this._targetPos);
             this.node.setPosition(this._curPos);
         }
+
     }
 
 
@@ -235,5 +242,6 @@ export class Player extends Component {
     update(deltaTime: number) {
         this.startRun(deltaTime);
         this.movePlayer(deltaTime);
+        this.selectedBoss = GameManager.Ins.selectedBoss;
     }
 }

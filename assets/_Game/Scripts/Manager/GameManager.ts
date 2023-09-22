@@ -27,6 +27,8 @@ export class GameManager extends Component {
 
     public sumPlayer: number = 1;
 
+    public selectedBoss: boolean;
+
     @property(Node)
     public player_field: Node[] = [];
  
@@ -44,11 +46,15 @@ export class GameManager extends Component {
 
     public playerList: Array<Player> = [];
 
+    @property(Node)
+    public selectScene!: Node;
+
     start() {
         this.coutPlayer = 1;
         this.endRun = false;
         this.spawnPlayer();
         this.camera2d.enabled = false;
+        this.selectedBoss = false;
     }
 
     update(deltaTime: number) {
@@ -86,8 +92,10 @@ export class GameManager extends Component {
     }
 
     spawnBoss(id: number){
-        GameManager.Ins.camera2d.enabled = false;
+        this.camera2d.enabled = false;
+        this.selectScene.active = false;
         this.poolControl.spawn(id,new Vec3(0,1.019,-180));
+        this.selectedBoss = true;
     }
 }
 
