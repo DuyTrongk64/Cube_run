@@ -70,8 +70,6 @@ export class GameManager extends Component {
             this.camera3d.node.setPosition(curPos);
             this.camera3d.node.setRotationFromEuler(-29.148,0,0);
             this.camera3d.canMove = false;
-            this.camera2d.enabled = true;
-            
         }
     }
 
@@ -93,10 +91,12 @@ export class GameManager extends Component {
 
     spawnBoss(id: number){
         this.camera2d.enabled = false;
-        this.selectScene.active = false;
+        //this.selectScene.active = false;
         this.poolControl.spawn(id,new Vec3(0,1.019,-180));
         this.selectedBoss = true;
     }
+
+    
 }
 
 

@@ -59,7 +59,7 @@ export class Player extends Component {
         // Listening to 'onCollisionStay' Events
         collider.on('onCollisionEnter', this.onCollision, this);
 
-        game.frameRate = 60;
+
     }
 
 
@@ -125,7 +125,7 @@ export class Player extends Component {
         if (event.otherCollider.name == 'End<BoxCollider>') {
             for (let i = 0; i < GameManager.Ins.coutPlayer; i++) {
                 //console.log(`${GameManager.Ins.playerList.length}`)
-                GameManager.Ins.playerList[i].node.setPosition(GameManager.Ins.player_field[i].getWorldPosition());
+                GameManager.Ins.playerList[i].moveTo(GameManager.Ins.player_field[i].getWorldPosition(), 1);
                 GameManager.Ins.playerList[i].canMove = false;
                 GameManager.Ins.playerList[i].anim.play('idle');
                 GameManager.Ins.playerList[i].node.setRotation(new Quat(0, 0, 0, 0));
@@ -134,8 +134,7 @@ export class Player extends Component {
             }
 
             GameManager.Ins.endRun = true;
-            GameManager.Ins.camera2d.enabled = true;
-
+            this.waitAndExecute(()=>this.onEndRun());
         }
 
         if (this.endRun) {
@@ -237,7 +236,26 @@ export class Player extends Component {
 
     }
 
+    moveTo(target: Vec3, duration: number): void {
+        // Tạo một tween để di chuyển node từ vị trí hiện tại đến vị trí mới (position)
+        tween(this.node)
+            .to(duration,
+                { position: target },
+                { easing: "linear", }
+            )
+            .start();
+    }
 
+    // Hàm chờ
+    waitAndExecute(callback: () => void) {
+        setTimeout(() => {
+            callback(); // Gọi hàm callback sau khi chờ
+        }, 1800);
+    }
+
+    onEndRun(){
+        GameManager.Ins.camera2d.enabled = true;
+    }
 
     update(deltaTime: number) {
         this.startRun(deltaTime);
